@@ -20,6 +20,12 @@ I am a Computer Science undergraduate with a strong background in machine learni
 
 My interests include AI, ML, Data Science, and Software Engineering.
 
+## Education
+
+**Computer Science Undergraduate**  
+*Your University Name*  
+GPA: 3.8/4.0
+
 ## Projects
 
 <div class="row">
@@ -93,3 +99,8 @@ My interests include AI, ML, Data Science, and Software Engineering.
 ## Contact
 
 Feel free to reach out to me via [LinkedIn](https://www.linkedin.com/in/yourprofile) or email me at [your.email@example.com](mailto:your.email@example.com).
+
+## Links
+
+- **GitHub Repository:** [GitHub Profile](https://github.com/yourusername)
+- **Coursera Profile:** [Coursera Profile](https://www.coursera.org/user/yourprofile)
