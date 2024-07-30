@@ -1,7 +1,6 @@
 ---
 title: "Your Name"
 ---
-
 # Welcome to My Portfolio
 
 Hello! I'm [Your Name], a Computer Science student aspiring to be a Machine Learning Engineer. Welcome to my portfolio!
