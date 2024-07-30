@@ -3,9 +3,10 @@ title: "Your Name"
 layout: default
 ---
 
-# Welcome to My Portfolio
-
-Hello! I'm [Your Name], a Computer Science student aspiring to be a Machine Learning Engineer. Welcome to my portfolio website, where you can learn more about my projects and skills.
+<header class="text-center mb-5">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Hello! I'm [Your Name], a Computer Science student aspiring to be a Machine Learning Engineer. Welcome to my portfolio website, where you can learn more about my projects and skills.</p>
+</header>
 
 ## About Me
 
@@ -21,31 +22,73 @@ My interests include AI, ML, Data Science, and Software Engineering.
 
 ## Projects
 
-<div class="list-group">
-    <a href="https://github.com/yourusername/django-event-management" class="list-group-item list-group-item-action">
-        Django Event Management Web App
-    </a>
-    <a href="https://github.com/yourusername/vehicle-recognition" class="list-group-item list-group-item-action">
-        Automatic Vehicle Recognition System
-    </a>
-    <a href="https://github.com/yourusername/machine-learning-capstone" class="list-group-item list-group-item-action">
-        Machine Learning Capstone
-    </a>
-    <a href="https://github.com/yourusername/ai-capstone-deep-learning" class="list-group-item list-group-item-action">
-        AI Capstone Project with Deep Learning
-    </a>
-    <a href="https://github.com/yourusername/applied-data-science-capstone" class="list-group-item list-group-item-action">
-        Applied Data Science Capstone
-    </a>
+<div class="row">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <h5>Django Event Management Web App</h5>
+            </div>
+            <div class="card-body">
+                <p>A comprehensive web application for managing events with features like user registration, email notifications, sentiment analysis, and event recommendations.</p>
+                <a href="https://github.com/yourusername/django-event-management" class="btn btn-primary">View Project</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <h5>Automatic Vehicle Recognition System</h5>
+            </div>
+            <div class="card-body">
+                <p>A Flask-based system integrating OpenCV and EasyOCR for real-time vehicle plate detection and recognition.</p>
+                <a href="https://github.com/yourusername/vehicle-recognition" class="btn btn-primary">View Project</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <h5>Machine Learning Capstone</h5>
+            </div>
+            <div class="card-body">
+                <p>A complete Streamlit app developed as part of the IBM Machine Learning Capstone, featuring model training and evaluation.</p>
+                <a href="https://github.com/yourusername/machine-learning-capstone" class="btn btn-primary">View Project</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mt-3">
+        <div class="card">
+            <div class="card-header">
+                <h5>AI Capstone Project with Deep Learning</h5>
+            </div>
+            <div class="card-body">
+                <p>An AI Capstone Project that involved using pretraining on ResNet and VGG models, achieving high accuracy on the test set.</p>
+                <a href="https://github.com/yourusername/ai-capstone-deep-learning" class="btn btn-primary">View Project</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mt-3">
+        <div class="card">
+            <div class="card-header">
+                <h5>Applied Data Science Capstone</h5>
+            </div>
+            <div class="card-body">
+                <p>A capstone project involving data collection, analysis, and visualization using SpaceX API and Wikipedia datasets.</p>
+                <a href="https://github.com/yourusername/applied-data-science-capstone" class="btn btn-primary">View Project</a>
+            </div>
+        </div>
+    </div>
 </div>
 
 ## Skills
 
-- **Programming Languages**: Python, JavaScript, C++
-- **Frameworks**: Django, Flask, Plotly Dash
-- **Libraries**: OpenCV, EasyOCR, TensorFlow, PyTorch
-- **Tools**: Git, Docker, Jupyter Notebook
-- **Other**: Data Analysis, Machine Learning, Computer Vision
+<ul>
+    <li><strong>Programming Languages:</strong> Python, JavaScript, C++</li>
+    <li><strong>Frameworks:</strong> Django, Flask, Plotly Dash</li>
+    <li><strong>Libraries:</strong> OpenCV, EasyOCR, TensorFlow, PyTorch</li>
+    <li><strong>Tools:</strong> Git, Docker, Jupyter Notebook</li>
+    <li><strong>Other:</strong> Data Analysis, Machine Learning, Computer Vision</li>
+</ul>
 
 ## Contact
 
