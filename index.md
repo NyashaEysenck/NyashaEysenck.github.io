@@ -23,8 +23,8 @@ My interests include AI, ML, Data Science, and Software Engineering.
 ## Education
 
 **Computer Science Undergraduate**  
-*Your University Name*  
-GPA: 3.8/4.0
+*Africa University*  
+GPA: 3.78/4.0
 
 ## Projects
 
