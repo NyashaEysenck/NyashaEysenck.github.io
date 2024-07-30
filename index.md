@@ -6,22 +6,7 @@ layout: default
 <header class="text-center mb-5">
     <h1>Welcome to My Portfolio</h1>
     <p>Hello! I'm Nyasha Gandah, a Computer Science student aspiring to be a Machine Learning Software Engineer. Welcome to my portfolio website, where you can learn more about my projects and skills.
-    
-    About Me
-
-From the moment I wrote my first line of code, I knew I had found my passion. As a Computer Science undergraduate with a 3.8 GPA, I've immersed myself in the fascinating world of Machine Learning and Data Science. Every project and course has been a step deeper into the ocean of knowledge that I love exploring.
-
-My journey has taken me through challenging and rewarding landscapes. I’ve completed specializations in Machine Learning and Deep Learning, where I learned to transform data into insights and models into solutions. One of my proudest achievements was during my AI Capstone Project, where I trained ResNet and VGG models, fine-tuning them until they achieved a remarkable 98% accuracy. It felt like unlocking a new level in a game, and it was exhilarating.
-
-Alongside these achievements, I've built a suite of machine learning projects that span from exploratory data analysis to deep learning. Each project taught me something new, like piecing together a vast and intricate puzzle. In my IBM Data Science Capstone, I ventured into the realm of web scraping, gathering data from the SpaceX API and Wikipedia, which felt like being a detective uncovering hidden treasures.
-
-But my passion doesn’t stop at data. I’ve created a Django-based event management web app, a project that melded my love for problem-solving with my knack for building user-friendly applications. Integrating features like user registration, event recommendations, and even a chatbot, this project became a playground for my skills and creativity.
-
-Venturing further into the practical application of my skills, I developed an automatic vehicle recognition system using Flask, OpenCV, and EasyOCR. This project, which brought together real-time license plate recognition and database management, was like engineering magic – seeing it work in real time was incredibly rewarding.
-
-Currently, I’m diving into interactive visual analytics with a Plotly Dash application focused on SpaceX launch data, and I’m embarking on an ambitious project to create an autonomous driving assistant. The excitement of learning and creating something new drives me forward.
-
-Looking ahead, I see myself stepping into the role of a Machine Learning Engineer, ready to tackle new challenges, create innovative solutions, and make a real impact. My journey is just beginning, and I’m excited about where it will lead me.</p>
+    </p>
 </header>
 
 ## About Me
