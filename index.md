@@ -1,11 +1,11 @@
 ---
-title: "Your Name"
+title: "Nyasha Eysenck Gandah"
 layout: default
 ---
 
 <header class="text-center mb-5">
     <h1>Welcome to My Portfolio</h1>
-    <p>Hello! I'm [Your Name], a Computer Science student aspiring to be a Machine Learning Engineer. Welcome to my portfolio website, where you can learn more about my projects and skills.</p>
+    <p>Hello! I'm Nyasha Gandah, a Computer Science student aspiring to be a Machine Learning Software Engineer. Welcome to my portfolio website, where you can learn more about my projects and skills.</p>
 </header>
 
 ## About Me
@@ -29,8 +29,8 @@ My interests include AI, ML, Data Science, and Software Engineering.
                 <h5>Django Event Management Web App</h5>
             </div>
             <div class="card-body">
-                <p>A comprehensive web application for managing events with features like user registration, email notifications, sentiment analysis, and event recommendations.</p>
-                <a href="https://github.com/yourusername/django-event-management" class="btn btn-primary">View Project</a>
+                <p>A comprehensive web application for managing events with features like user registration, email notifications, sentiment analysis.</p>
+                <a href="https://github.com/NyashaEysenck/Event-Hub" class="btn btn-primary">View Project</a>
             </div>
         </div>
     </div>
@@ -41,7 +41,7 @@ My interests include AI, ML, Data Science, and Software Engineering.
             </div>
             <div class="card-body">
                 <p>A Flask-based system integrating OpenCV and EasyOCR for real-time vehicle plate detection and recognition.</p>
-                <a href="https://github.com/yourusername/vehicle-recognition" class="btn btn-primary">View Project</a>
+                <a href="https://github.com/NyashaEysenck/Automatic-Vehicle-Recognition" class="btn btn-primary">View Project</a>
             </div>
         </div>
     </div>
@@ -52,7 +52,7 @@ My interests include AI, ML, Data Science, and Software Engineering.
             </div>
             <div class="card-body">
                 <p>A complete Streamlit app developed as part of the IBM Machine Learning Capstone, featuring model training and evaluation.</p>
-                <a href="https://github.com/yourusername/machine-learning-capstone" class="btn btn-primary">View Project</a>
+                <a href="https://github.com/NyashaEysenck/Machine-Learning-Capstone" class="btn btn-primary">View Project</a>
             </div>
         </div>
     </div>
@@ -63,7 +63,7 @@ My interests include AI, ML, Data Science, and Software Engineering.
             </div>
             <div class="card-body">
                 <p>An AI Capstone Project that involved using pretraining on ResNet and VGG models, achieving high accuracy on the test set.</p>
-                <a href="https://github.com/yourusername/ai-capstone-deep-learning" class="btn btn-primary">View Project</a>
+                <a href="https://github.com/NyashaEysenck/AI-Capstone-Project-with-Deep-Learning" class="btn btn-primary">View Project</a>
             </div>
         </div>
     </div>
@@ -74,7 +74,7 @@ My interests include AI, ML, Data Science, and Software Engineering.
             </div>
             <div class="card-body">
                 <p>A capstone project involving data collection, analysis, and visualization using SpaceX API and Wikipedia datasets.</p>
-                <a href="https://github.com/yourusername/applied-data-science-capstone" class="btn btn-primary">View Project</a>
+                <a href="https://github.com/NyashaEysenck/Applied-Data-Science-Capstone" class="btn btn-primary">View Project</a>
             </div>
         </div>
     </div>
