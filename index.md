@@ -89,18 +89,18 @@ GPA: 3.8/4.0
 ## Skills
 
 <ul>
-    <li><strong>Programming Languages:</strong> Python, JavaScript, C++</li>
+    <li><strong>Programming Languages:</strong> Python, JavaScript, C++, SQL </li>
     <li><strong>Frameworks:</strong> Django, Flask, Plotly Dash</li>
-    <li><strong>Libraries:</strong> OpenCV, EasyOCR, TensorFlow, PyTorch</li>
-    <li><strong>Tools:</strong> Git, Docker, Jupyter Notebook</li>
-    <li><strong>Other:</strong> Data Analysis, Machine Learning, Computer Vision</li>
+    <li><strong>Libraries:</strong> OpenCV, EasyOCR, TensorFlow, Scikit-learn, Pandas, Numpy </li>
+    <li><strong>Tools:</strong> Git, Docker, Jupyter Notebook, MySql </li>
+    <li><strong>Other:</strong> Data Analysis, Machine Learning, Deep Learning, Computer Vision</li>
 </ul>
 
 ## Contact
 
-Feel free to reach out to me via [LinkedIn](https://www.linkedin.com/in/yourprofile) or email me at [your.email@example.com](mailto:your.email@example.com).
+Feel free to reach out to me via [LinkedIn](www.linkedin.com/in/nyasha-gandah-8997b8311) or email me at [nyashaeysenckgandah@gmail.com](mailto:nyashaeysenckgandah@gmail.com).
 
 ## Links
 
-- **GitHub Repository:** [GitHub Profile](https://github.com/yourusername)
-- **Coursera Profile:** [Coursera Profile](https://www.coursera.org/user/yourprofile)
+- **GitHub Repository:** [GitHub Profile](https://github.com/NyashaEysenck)
+- **Coursera Profile:** [Coursera Profile](https://www.coursera.org/user/6e6a18d6b7a8e22b7dcab7aaaee7a6ea)
