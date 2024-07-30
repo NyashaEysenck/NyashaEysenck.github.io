@@ -1,3 +1,5 @@
-remote_theme: pages-themes/minimal@v0.2.0
 title: Your Name
 description: A portfolio of my projects and accomplishments.
+markdown: kramdown
+kramdown:
+  input: GFM
