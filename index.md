@@ -23,9 +23,10 @@ My interests include AI, ML, Data Science, and Software Engineering.
 
 ## Education
 
-**Computer Science Undergraduate**  
+**Computer Science Undergraduate: Ongoing**  
 *Africa University*  
 GPA: 3.78/4.0
+Expected Graduation Date: July 2026
 
 ## Projects
 
