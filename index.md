@@ -11,22 +11,30 @@ layout: default
 
 ## About Me
 
-I am a Computer Science undergraduate with a strong background in machine learning, deep learning, and web development. I have completed several specializations and certifications in these fields, including:
+From a young age, I've been captivated by technology's potential to solve real-world problems. This curiosity led me to pursue a Bachelor of Science in Computer Science at Africa University, where I've maintained a 3.8 GPA. My academic journey has been enriched by deep dives into machine learning, deep learning, and web development.
 
-- **CS50 Intro to AI**
-- **Andrew Ng's Machine Learning Specialization**
-- **IBM Machine Learning Professional Certificate**
-- **Deep Learning Specialization**
-- **IBM AI Developer Professional Certificate**
+Throughout my studies, I've worked on various projects that blend theory with practical application. One standout project was a Django event management web app, which enhanced my backend development and database management skills. I also completed capstone projects like an automatic vehicle recognition system and a course recommender system using Streamlit, showcasing my ability to harness AI and ML to tackle complex challenges.
 
-My interests include AI, ML, Data Science, and Software Engineering.
+My passion extends beyond the classroom. As an active member of university clubs focused on Cybersecurity and AI, I continuously explore cutting-edge technologies and stay updated on the latest advancements. My interests in AI, ML, Data Science, and Software Engineering are not just academic—they drive my vision of shaping a future where technology enhances human capabilities and improves lives.
 
 ## Education
 
-**Computer Science Undergraduate - Expected Graduation Date: June 2026 **
-*Africa University*  
+**Computer Science Undergraduate - Expected Graduation Date: June 2026 
+*Africa University* 
 
 GPA: 3.78/4.0
+
+**High School - Advanced Level : 2020-2021
+*Thornhill High School 
+Grades: Maths (A), Physics (A), Computer Science (A) 
+
+## Certifications
+
+- **IBM AI Developer Professional Certificate** (Completed: July 29, 2024)
+- **Deep Learning Specialization** (Completed: July 7, 2024 )
+- **IBM Machine Learning Professional Certificate** (Completed: June 10, 2024)
+- **Andrew Ng's Machine Learning Specialization** (Completed: May 13, 2024)
+- **CS50 Intro to AI** (Completed: March 13, 2024 )
 
 
 ## Projects
