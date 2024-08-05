@@ -25,8 +25,8 @@ Computer Science Undergraduate - Expected Graduation Date: June 2026
 GPA: 3.78/4.0
 
 ### Thornhill High School
-Advanced Level : 2020-2021
-Grades: Maths (A), Physics (A), Computer Science (A) 
+Advanced Level(Zimsec) : 2020-2021
+Grades: Pure Mathematic (A), Physics (A), Computer Science (A) 
 
 ## Certifications
 
