@@ -104,7 +104,7 @@ Grades: Maths (A), Physics (A), Computer Science (A)
     <li><strong>Frameworks:</strong> Django, Flask, Plotly Dash</li>
     <li><strong>Libraries:</strong> OpenCV, EasyOCR, TensorFlow, Scikit-learn, Pandas, Numpy </li>
     <li><strong>Tools:</strong> Git, Docker, Jupyter Notebook, MySql </li>
-    <li><strong>Other:</strong> Data Analysis, Machine Learning, Deep Learning, Computer Vision</li>
+    <li><strong>Other:</strong> Data Science, Machine Learning, Deep Learning, Computer Vision</li>
 </ul>
 
 ## Contact
