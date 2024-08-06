@@ -26,7 +26,7 @@ GPA: 3.78/4.0
 
 ### Thornhill High School
 Advanced Level(Zimsec) : 2020-2021
-Grades: Pure Mathematic (A), Physics (A), Computer Science (A) 
+Grades: Pure Mathematics (A), Physics (A), Computer Science (A) 
 
 ## Certifications
 
