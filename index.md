@@ -27,6 +27,7 @@ GPA: 3.8/4.0
 ### Thornhill High School (2016 - 2021)
 Advanced Level(Zimsec) : 2020-2021
 Grades: Pure Mathematics (A), Physics (A), Computer Science (A) 
+<br>
 Activities: 
 * Midlands Province Chess Team (2016- 2017)
 * Interact Club
