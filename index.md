@@ -11,7 +11,7 @@ layout: default
 
 ## About Me
 
-My love for technology began in high school, where I studied Computer Science, Mathematics, and Physics at A-level, achieving distinctions. This early passion for tech's potential to solve real-world problems led me to pursue a Bachelor of Science in Computer Science at Africa University, where I’ve maintained a 3.78 GPA. My academic journey has been enriched by deep dives into machine learning, deep learning, and web development.
+My love for technology began in high school, where I studied Computer Science, Mathematics, and Physics at A-level, achieving distinctions. This early passion for tech's potential to solve real-world problems led me to pursue a Bachelor of Science in Computer Science at Africa University, where I’ve maintained a 3.8 GPA. My academic journey has been enriched by deep dives into machine learning, deep learning, and web development.
 
 Throughout my studies, I’ve worked on various projects that blend theory with practical application. One standout project was a Django event management web app, which enhanced my backend development, machine learning and database management skills. I also completed school and capstone projects  like an automatic vehicle recognition system and a course recommender system using Streamlit, showcasing my ability to harness AI and ML to tackle complex challenges.
 
@@ -22,7 +22,7 @@ My passion extends beyond the classroom. I continuously explore cutting-edge tec
 Computer Science Undergraduate - Expected Graduation Date: June 2026 
 
 
-GPA: 3.78/4.0
+GPA: 3.8/4.0
 
 ### Thornhill High School
 Advanced Level(Zimsec) : 2020-2021
