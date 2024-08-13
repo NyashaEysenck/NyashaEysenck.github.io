@@ -24,13 +24,13 @@ Computer Science Undergraduate - Expected Graduation Date: June 2026
 
 GPA: 3.8/4.0
 
-### Thornhill High School
+### Thornhill High School (2016 - 2021)
 Advanced Level(Zimsec) : 2020-2021
 Grades: Pure Mathematics (A), Physics (A), Computer Science (A) 
 Activities: 
-* Midlands Chess Team 2016- 2017
+* Midlands Province Chess Team (2016- 2017)
 * Interact Club
-* Chess Club : (Captain 2016-2021)
+* Chess Club : (Captain: 2016-2021)
 
 ## Certifications
 
