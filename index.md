@@ -1,9 +1,4 @@
-Here's how you can style your portfolio using Bootstrap for a responsive design, along with custom CSS for additional visual enhancements. This implementation includes a dark theme, cards for your projects, and a polished layout.
 
-### 1. **HTML Structure**
-Ensure that Bootstrap is included in your project, and then integrate the HTML code into your `index.md` or main HTML file.
-
-```html
 ---
 title: "Name"
 layout: default
