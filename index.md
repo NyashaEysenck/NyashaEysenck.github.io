@@ -1,5 +1,4 @@
- 
-<html lang="en">
+ <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,15 +9,16 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
+            background-color: #1a1a2e;
+            color: #f0f0f0;
             text-align: center;
         }
 
         header {
-            background: linear-gradient(to right, #4b6cb7, #182848);
-            color: white;
+            background: #16213e;
+            color: #f0f0f0;
             padding: 40px 20px;
+            border-bottom: 3px solid #0f3460;
         }
 
         header h1 {
@@ -44,11 +44,14 @@
 
         section {
             padding: 60px 20px;
+            background-color: #0f3460;
+            border-top: 3px solid #0f3460;
+            border-bottom: 3px solid #0f3460;
         }
 
         h2 {
             font-size: 2.5rem;
-            color: #333;
+            color: #e94560;
             margin-bottom: 30px;
         }
 
@@ -65,9 +68,9 @@
         }
 
         .card {
-            background: white;
+            background: #16213e;
             border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
             width: 300px;
             margin: 20px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -75,12 +78,12 @@
 
         .card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
         }
 
         .card-header {
-            background: linear-gradient(to right, #4b6cb7, #182848);
-            color: white;
+            background: #0f3460;
+            color: #f0f0f0;
             padding: 20px;
             border-radius: 10px 10px 0 0;
             font-size: 1.5rem;
@@ -89,7 +92,7 @@
         .card-body {
             padding: 20px;
             font-size: 1rem;
-            color: #555;
+            color: #dcdde1;
         }
 
         .card-body p {
@@ -97,7 +100,7 @@
         }
 
         .btn-primary {
-            background-color: #4b6cb7;
+            background-color: #e94560;
             border: none;
             color: white;
             padding: 10px 20px;
@@ -110,13 +113,14 @@
         }
 
         .btn-primary:hover {
-            background-color: #2e4372;
+            background-color: #9a2f3c;
         }
 
         .skills ul, .certifications ul {
             list-style: none;
             padding: 0;
             font-size: 1.1rem;
+            color: #dcdde1;
         }
 
         .skills li, .certifications li {
@@ -124,19 +128,19 @@
         }
 
         .skills li i, .certifications li i {
-            color: #4b6cb7;
+            color: #e94560;
             margin-right: 10px;
         }
 
         footer {
-            background-color: #333;
-            color: white;
+            background-color: #0f3460;
+            color: #f0f0f0;
             padding: 20px;
             margin-top: 30px;
         }
 
         footer a {
-            color: white;
+            color: #e94560;
             text-decoration: none;
             margin: 0 10px;
         }
