@@ -1,139 +1,274 @@
-
----
-title: "Nyasha Gandah"
-layout: default
----
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <title>Name | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            text-align: center;
+        }
+
+        header {
+            background: linear-gradient(to right, #4b6cb7, #182848);
+            color: white;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+            font-size: 3rem;
+            animation: slideIn 1s ease-out forwards;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            animation: fadeIn 2s ease-out forwards;
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateY(-100px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        section {
+            padding: 60px 20px;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-header {
+            background: linear-gradient(to right, #4b6cb7, #182848);
+            color: white;
+            padding: 20px;
+            border-radius: 10px 10px 0 0;
+            font-size: 1.5rem;
+        }
+
+        .card-body {
+            padding: 20px;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .card-body p {
+            margin-bottom: 15px;
+        }
+
+        .btn-primary {
+            background-color: #4b6cb7;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #2e4372;
+        }
+
+        .skills ul, .certifications ul {
+            list-style: none;
+            padding: 0;
+            font-size: 1.1rem;
+        }
+
+        .skills li, .certifications li {
+            margin: 10px 0;
+        }
+
+        .skills li i, .certifications li i {
+            color: #4b6cb7;
+            margin-right: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
-<body class="bg-dark text-white">
+<body>
+
+<header>
+    <h1>Welcome to My Portfolio</h1>
+    <p>Hello! I'm Name, a Computer Science student aspiring to be a Machine Learning Software Engineer.</p>
+    <img src="https://media.giphy.com/media/2IudUHdI075HL02Pkk/giphy.gif" alt="Coding gif" width="300">
+</header>
+
+<section>
     <div class="container">
-        <header class="text-center my-5">
-            <h1 class="display-4">Welcome to My Portfolio</h1>
-            <p class="lead">Hello! I'm <strong>Name</strong>, a Computer Science student aspiring to be a Machine Learning Software Engineer. Welcome to my portfolio website, where you can learn more about my projects and skills.</p>
-        </header>
+        <h2>About Me</h2>
+        <p>My love for technology began in high school, where I studied Computer Science, Mathematics, and Physics at A-level, achieving distinctions. This early passion for tech's potential to solve real-world problems led me to pursue a Bachelor of Science in Computer Science at Africa University, where I’ve maintained a 3.8 GPA. My academic journey has been enriched by deep dives into machine learning, deep learning, and web development.</p>
+    </div>
+</section>
 
-        <section class="mb-5">
-            <h2 class="h3">About Me</h2>
-            <p>My love for technology began in high school, where I studied Computer Science, Mathematics, and Physics at A-level, achieving distinctions. This early passion for tech's potential to solve real-world problems led me to pursue a Bachelor of Science in Computer Science at Africa University, where I’ve maintained a 3.8 GPA. My academic journey has been enriched by deep dives into machine learning, deep learning, and web development.</p>
-            <p>Throughout my studies, I’ve worked on various projects that blend theory with practical application. One standout project was a Django event management web app, which enhanced my backend development, machine learning and database management skills. I also completed school and capstone projects like an automatic vehicle recognition system and a course recommender system using Streamlit, showcasing my ability to harness AI and ML to tackle complex challenges.</p>
-            <p>My passion extends beyond the classroom. I continuously explore cutting-edge technologies and stay updated on the latest advancements. My interests in AI, ML, Data Science, and Software Engineering are not just academic—they drive my vision of shaping a future where technology enhances human capabilities and improves lives.</p>
-        </section>
-
-        <section class="mb-5">
-            <h2 class="h3">Education</h2>
-            <div class="card bg-secondary mb-3">
+<section>
+    <div class="container">
+        <h2>Education</h2>
+        <div class="row">
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-graduation-cap"></i> Africa University
+                </div>
                 <div class="card-body">
-                    <h4 class="card-title">Africa University</h4>
-                    <p class="card-text">Computer Science Undergraduate - Expected Graduation Date: June 2026</p>
-                    <p class="card-text">GPA: 3.8/4.0</p>
+                    <p>Computer Science Undergraduate</p>
+                    <p><strong>GPA:</strong> 3.8/4.0</p>
+                    <p><strong>Expected Graduation:</strong> June 2026</p>
                 </div>
             </div>
-            <div class="card bg-secondary">
+
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-school"></i> Thornhill High School (2016 - 2021)
+                </div>
                 <div class="card-body">
-                    <h4 class="card-title">Thornhill High School (2016 - 2021)</h4>
-                    <p class="card-text">Advanced Level (Zimsec) : 2020-2021</p>
-                    <p class="card-text">Grades: Pure Mathematics (A), Physics (A), Computer Science (A)</p>
-                    <p class="card-text"><strong>Activities:</strong></p>
-                    <ul>
-                        <li>Midlands Province Chess Team (2016-2017)</li>
-                        <li>Interact Club</li>
-                        <li>Chess Club (Captain: 2016-2021)</li>
-                    </ul>
+                    <p>Advanced Level (Zimsec): Pure Mathematics, Physics, Computer Science</p>
+                    <p><strong>Grades:</strong> All A's</p>
+                    <p><strong>Activities:</strong> Chess Captain, Interact Club</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
 
-        <section class="mb-5">
-            <h2 class="h3">Certifications</h2>
-            <ul class="list-group list-group-flush bg-dark">
-                <li class="list-group-item bg-secondary text-white">IBM AI Developer Professional Certificate (Completed: July 29, 2024)</li>
-                <li class="list-group-item bg-secondary text-white">Deep Learning Specialization (Completed: July 7, 2024)</li>
-                <li class="list-group-item bg-secondary text-white">IBM Machine Learning Professional Certificate (Completed: June 10, 2024)</li>
-                <li class="list-group-item bg-secondary text-white">Andrew Ng's Machine Learning Specialization (Completed: May 13, 2024)</li>
-                <li class="list-group-item bg-secondary text-white">CS50 Intro to AI (Completed: March 13, 2024)</li>
-            </ul>
-        </section>
+<section>
+    <div class="container">
+        <h2>Certifications</h2>
+        <ul class="certifications">
+            <li><i class="fas fa-certificate"></i> IBM AI Developer Professional Certificate (2024)</li>
+            <li><i class="fas fa-certificate"></i> Deep Learning Specialization (2024)</li>
+            <li><i class="fas fa-certificate"></i> IBM Machine Learning Professional Certificate (2024)</li>
+            <li><i class="fas fa-certificate"></i> Andrew Ng's Machine Learning Specialization (2024)</li>
+            <li><i class="fas fa-certificate"></i> CS50 Intro to AI (2024)</li>
+        </ul>
+    </div>
+</section>
 
-        <section class="mb-5">
-            <h2 class="h3">Projects</h2>
-            <div class="row">
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card bg-secondary text-white">
-                        <div class="card-header"><h5>Django Event Management Web App</h5></div>
-                        <div class="card-body">
-                            <p class="card-text">A comprehensive web application for managing events with features like user registration, email notifications, and sentiment analysis.</p>
-                            <a href="#" class="btn btn-primary">View Project</a>
-                        </div>
-                    </div>
+<section>
+    <div class="container">
+        <h2>Projects</h2>
+        <div class="row">
+            <!-- Project 1 -->
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-code"></i> Django Event Management Web App
                 </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card bg-secondary text-white">
-                        <div class="card-header"><h5>Automatic Vehicle Recognition System</h5></div>
-                        <div class="card-body">
-                            <p class="card-text">A Flask-based system integrating OpenCV for real-time vehicle plate detection and recognition.</p>
-                            <a href="#" class="btn btn-primary">View Project</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card bg-secondary text-white">
-                        <div class="card-header"><h5>Machine Learning Capstone</h5></div>
-                        <div class="card-body">
-                            <p class="card-text">A complete Streamlit app developed as part of the IBM Machine Learning Capstone, featuring model training and evaluation.</p>
-                            <a href="#" class="btn btn-primary">View Project</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card bg-secondary text-white">
-                        <div class="card-header"><h5>AI Capstone Project with Deep Learning</h5></div>
-                        <div class="card-body">
-                            <p class="card-text">An AI Capstone Project that involved using pretraining on ResNet and VGG models, achieving high accuracy on the test set.</p>
-                            <a href="#" class="btn btn-primary">View Project</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card bg-secondary text-white">
-                        <div class="card-header"><h5>Applied Data Science Capstone</h5></div>
-                        <div class="card-body">
-                            <p class="card-text">A capstone project involving data collection, analysis, and visualization using SpaceX API and Wikipedia datasets.</p>
-                            <a href="#" class="btn btn-primary">View Project</a>
-                        </div>
-                    </div>
+                <div class="card-body">
+                    <p>A comprehensive web application for managing events with features like user registration, email notifications, and sentiment analysis.</p>
+                    <a href="#" class="btn-primary">View Project</a>
                 </div>
             </div>
-        </section>
+            <!-- Project 2 -->
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-car"></i> Automatic Vehicle Recognition System
+                </div>
+                <div class="card-body">
+                    <p>A Flask-based system integrating OpenCV for real-time vehicle plate detection and recognition.</p>
+                    <a href="#" class="btn-primary">View Project</a>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-stream"></i> Machine Learning Capstone
+                </div>
+                <div class="card-body">
+                    <p>A complete Streamlit app developed as part of the IBM Machine Learning Capstone, featuring model training and evaluation.</p>
+                    <a href="#" class="btn-primary">View Project</a>
+                </div>
+            </div>
+            <!-- Project 4 -->
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-brain"></i> AI Capstone Project with Deep Learning
+                </div>
+                <div class="card-body">
+                    <p>An AI Capstone Project that involved using pretraining on ResNet and VGG models, achieving high accuracy on the test set.</p>
+                    <a href="#" class="btn-primary">View Project</a>
+                </div>
+            </div>
+            <!-- Project 5 -->
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-rocket"></i> Applied Data Science Capstone
+                </div>
+                <div class="card-body">
+                    <p>A data science project involving data collection, wrangling, analysis, and visualization using real-world datasets.</p>
+                    <a href="#" class="btn-primary">View Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-        <section class="mb-5">
-            <h2 class="h3">Skills</h2>
-            <ul class="list-unstyled">
-                <li><strong>Programming Languages:</strong> Python, JavaScript, C++, SQL</li>
-                <li><strong>Frameworks:</strong> Django, Flask, Plotly Dash</li>
-                <li><strong>Libraries:</strong> OpenCV, EasyOCR, TensorFlow, Scikit-learn, Pandas, Numpy</li>
-                <li><strong>Tools:</strong> Git, Docker, Jupyter Notebook, MySQL</li>
-                <li><strong>Other:</strong> Data Science, Machine Learning, Deep Learning, Computer Vision</li>
-            </ul>
-        </section>
+<footer>
+    <p>Connect with me:</p>
+    <p>
+        <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="#"><i class="fab fa-github"></i> GitHub</a>
+        <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+    </p>
+</footer>
 
-        <section class="mb-5">
-            <h2 class="h3">Contact</h2>
-            <p>Feel free to reach out to me via <a href="https://www.linkedin.com" class="text-white"><i class="fab fa-linkedin"></i> LinkedIn</a> or email me at <a href="mailto:email@example.com" class="text-white"><i class="fas fa-envelope"></i> email@example.com</a>.</p>
-        </section>
-
-        <section>
-            <h2 class="h3">Links</h2>
-            <ul class="list-unstyled">
-                <li><strong>GitHub Repository:</strong> <a href="https://github.com/username" class="text-white">GitHub Profile</a></li>
-                <li><strong>Coursera Profile:</strong> <a href="https://www.coursera.org/user"
+</body>
+</html>
