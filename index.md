@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -214,7 +214,7 @@
                 </div>
                 <div class="card-body">
                     <p>A comprehensive web application for managing events with features like user registration, email notifications, and sentiment analysis.</p>
-                    <a href="#" class="btn-primary">View Project</a>
+                    <a href="https://github.com/NyashaEysenck/Event-Hub" class="btn-primary">View Project</a>
                 </div>
             </div>
             <!-- Project 2 -->
@@ -224,7 +224,7 @@
                 </div>
                 <div class="card-body">
                     <p>A Flask-based system integrating OpenCV for real-time vehicle plate detection and recognition.</p>
-                    <a href="#" class="btn-primary">View Project</a>
+                    <a href="https://github.com/NyashaEysenck/Automatic-Vehicle-Recognition" class="btn-primary">View Project</a>
                 </div>
             </div>
             <!-- Project 3 -->
@@ -234,7 +234,7 @@
                 </div>
                 <div class="card-body">
                     <p>A complete Streamlit app developed as part of the IBM Machine Learning Capstone, featuring model training and evaluation.</p>
-                    <a href="#" class="btn-primary">View Project</a>
+                    <a href="https://github.com/NyashaEysenck/Machine-Learning-Capstone"  class="btn-primary">View Project</a>
                 </div>
             </div>
             <!-- Project 4 -->
@@ -244,7 +244,7 @@
                 </div>
                 <div class="card-body">
                     <p>An AI Capstone Project that involved using pretraining on ResNet and VGG models, achieving high accuracy on the test set.</p>
-                    <a href="#" class="btn-primary">View Project</a>
+                    <a href="https://github.com/NyashaEysenck/AI-Capstone-Project-with-Deep-Learning" class="btn-primary">View Project</a>
                 </div>
             </div>
             <!-- Project 5 -->
@@ -254,7 +254,7 @@
                 </div>
                 <div class="card-body">
                     <p>A data science project involving data collection, wrangling, analysis, and visualization using real-world datasets.</p>
-                    <a href="#" class="btn-primary">View Project</a>
+                    <a href="https://github.com/NyashaEysenck/Applied-Data-Science-Capstone" class="btn-primary">View Project</a>
                 </div>
             </div>
         </div>
@@ -264,9 +264,8 @@
 <footer>
     <p>Connect with me:</p>
     <p>
-        <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
-        <a href="#"><i class="fab fa-github"></i> GitHub</a>
-        <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+        <a href="www.linkedin.com/in/nyasha-gandah-8997b8311"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/NyashaEysenck"><i class="fab fa-github"></i> GitHub</a>
     </p>
 </footer>
 
