@@ -150,7 +150,7 @@
 
 <header>
     <h1>Welcome to My Portfolio</h1>
-    <p>Hello! I'm Name, a Computer Science student aspiring to be a Machine Learning Software Engineer.</p>
+    <p>Hello! I'm Nyasha, a Computer Science student aspiring to be a Software Engineer woth a focus in Data Science and Machine Learning.</p>
     <img src="https://media.giphy.com/media/2IudUHdI075HL02Pkk/giphy.gif" alt="Coding gif" width="300">
 </header>
 
