@@ -7,28 +7,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        /* Global Styling */
         body {
             font-family: 'Montserrat', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #1a1a2e;
-            color: #f0f0f0;
-            scroll-behavior: smooth;
+            background-color: #f5f7fa;
+            color: #333;
         }
 
-        /* Navigation Bar */
+        /* Navbar Styling */
         nav {
+            background-color: #4a6fa5;
+            color: white;
+            padding: 15px;
             position: fixed;
-            top: 0;
-            left: 0;
             width: 100%;
-            background-color: #0f3460;
-            display: flex;
-            justify-content: space-around;
-            padding: 20px 0;
+            top: 0;
             z-index: 1000;
-            border-bottom: 2px solid #e94560;
         }
 
         nav ul {
@@ -36,74 +31,50 @@
             margin: 0;
             padding: 0;
             display: flex;
-            gap: 20px;
+            justify-content: center;
         }
 
         nav ul li {
-            display: inline;
+            margin: 0 20px;
         }
 
         nav ul li a {
-            color: #f0f0f0;
+            color: white;
             text-decoration: none;
-            font-size: 1.2rem;
-            font-weight: bold;
+            font-size: 1.1rem;
             transition: color 0.3s ease;
         }
 
         nav ul li a:hover {
-            color: #e94560;
+            color: #ffcccb;
         }
 
-        /* Header */
         header {
-            background: #16213e;
-            color: #f0f0f0;
-            padding: 100px 20px 60px;
+            background: #4a6fa5;
+            color: white;
+            padding: 100px 20px 60px 20px;
             text-align: center;
-            border-bottom: 3px solid #0f3460;
+            border-bottom: 3px solid #335e7e;
         }
 
         header h1 {
+            margin-bottom: 10px;
             font-size: 3rem;
-            animation: slideIn 1s ease-out forwards;
         }
 
-        header p {
-            font-size: 1.2rem;
-            animation: fadeIn 2s ease-out forwards;
-        }
-
-        header img {
-            margin-top: 20px;
-        }
-
-        @keyframes slideIn {
-            0% { transform: translateY(-100px); opacity: 0; }
-            100% { transform: translateY(0); opacity: 1; }
-        }
-
-        @keyframes fadeIn {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
-        }
-
-        /* Section Styling */
         section {
             padding: 60px 20px;
-            margin-top: 20px;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            color: #4a6fa5;
+            margin-bottom: 30px;
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
-        }
-
-        h2 {
-            font-size: 2.5rem;
-            color: #e94560;
-            margin-bottom: 30px;
-            text-align: center;
         }
 
         .row {
@@ -112,135 +83,117 @@
             justify-content: space-around;
         }
 
-        /* Card Styling */
         .card {
-            background: #16213e;
+            background: white;
             border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             width: 300px;
             margin: 20px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            position: relative;
         }
 
         .card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
         }
 
         .card-header {
-            background: #0f3460;
-            color: #f0f0f0;
+            background: #f5f7fa;
+            color: #333;
             padding: 20px;
             border-radius: 10px 10px 0 0;
             font-size: 1.5rem;
+            text-align: center;
         }
 
         .card-body {
             padding: 20px;
             font-size: 1rem;
-            color: #dcdde1;
         }
 
-        /* Button Styling */
         .btn-primary {
-            background-color: #e94560;
+            background-color: #4a6fa5;
             border: none;
             color: white;
             padding: 10px 20px;
             text-align: center;
-            text-decoration: none;
             display: inline-block;
-            font-size: 1rem;
             border-radius: 5px;
             transition: background-color 0.3s ease;
+            text-decoration: none;
         }
 
         .btn-primary:hover {
-            background-color: #9a2f3c;
+            background-color: #335e7e;
         }
 
-        /* Skills Section */
-        .skills-category {
-            margin-bottom: 2rem;
-        }
-
-        .progress-bar {
-            background-color: #16213e;
-            border-radius: 20px;
-            overflow: hidden;
-            margin: 0.5rem 0;
-            height: 20px;
-        }
-
-        .progress {
-            height: 100%;
-            border-radius: 20px;
-            background-color: #e94560;
-            width: 0;
-            animation: grow 2s ease-in-out forwards;
-        }
-
-        @keyframes grow {
-            from { width: 0; }
-            to { width: var(--progress-width); }
-        }
-
-        /* Footer */
         footer {
-            background-color: #0f3460;
-            color: #f0f0f0;
+            background-color: #4a6fa5;
+            color: white;
             padding: 20px;
             text-align: center;
-            margin-top: 30px;
         }
 
         footer a {
-            color: #e94560;
+            color: white;
+            margin: 0 10px;
             text-decoration: none;
+            transition: color 0.3s ease;
         }
 
         footer a:hover {
-            text-decoration: underline;
+            color: #ffcccb;
         }
 
+        /* Responsive */
+        @media only screen and (max-width: 768px) {
+            .row {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            .card {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
 
-<!-- Navigation -->
 <nav>
     <ul>
-        <li><a href="#about">About Me</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#education">Education</a></li>
+        <li><a href="#certifications">Certifications</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
 
-<!-- Header -->
 <header>
     <h1>Welcome to My Portfolio</h1>
-    <p>Hello! I'm a Computer Science student aspiring to be a Software Engineer with a focus in Data Science and Machine Learning</p>
-    <img src="https://media.giphy.com/media/gi84IkFRzwube/giphy.gif?cid=790b7611svdechj6yni1mm2obvahmhr68csc6k7qjzz72akz&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Animated Gif" width="300">
+    <p>Hello! I'm a Computer Science student aspiring to be a Software Engineer.</p>
 </header>
 
-<!-- About Section -->
 <section id="about">
     <div class="container">
         <h2>About Me</h2>
-        <p>My love for technology began in high school, where I studied Computer Science, Mathematics, and Physics at A-level, achieving distinctions. This passion for tech's potential led me to pursue a Bachelor of Science in Computer Science at Africa University, maintaining a 3.8 GPA.</p>
+        <p>My love for technology began in high school...</p>
     </div>
 </section>
 
-<!-- Education Section -->
 <section id="education">
     <div class="container">
         <h2>Education</h2>
         <div class="row">
             <div class="card">
-                <div class="card-header"><i class="fas fa-graduation-cap"></i> Africa University</div>
+                <div class="card-header">
+                    <i class="fas fa-graduation-cap"></i> Africa University
+                </div>
                 <div class="card-body">
                     <p>Computer Science Undergraduate</p>
                     <p><strong>GPA:</strong> 3.8/4.0</p>
@@ -248,72 +201,52 @@
                 </div>
             </div>
             <div class="card">
-                <div class="card-header"><i class="fas fa-school"></i> Thornhill High School</div>
+                <div class="card-header">
+                    <i class="fas fa-school"></i> Thornhill High School
+                </div>
                 <div class="card-body">
-                    <p>Advanced Level: Pure Mathematics, Physics, Computer Science</p>
-                    <p><strong>Grades:</strong> All A's</p>
-                    <p><strong>Activities:</strong> Chess Captain, Interact Club</p>
+                    <p>Advanced Level (Zimsec): Pure Mathematics, Physics, Computer Science</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Projects Section -->
+<section id="certifications">
+    <div class="container">
+        <h2>Certifications</h2>
+        <ul>
+            <li><i class="fas fa-certificate"></i> IBM AI Developer Professional Certificate</li>
+            <li><i class="fas fa-certificate"></i> Deep Learning Specialization</li>
+            <li><i class="fas fa-certificate"></i> IBM Machine Learning Professional Certificate</li>
+        </ul>
+    </div>
+</section>
+
 <section id="projects">
     <div class="container">
         <h2>Projects</h2>
         <div class="row">
-            <div class="card">
-                <div class="card-header"><i class="fas fa-code"></i> Django Event Management Web App</div>
-                <div class="card-body">
-                    <p>Developed an event management web app with user registration, event upload, and CRUD functionality.</p>
-                    <a href="#" class="btn-primary">View Project</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header"><i class="fas fa-car"></i> Automatic Vehicle Recognition System</div>
-                <div class="card-body">
-                    <p>Flask-based vehicle recognition and registration system using machine learning models.</p>
-                    <a href="#" class="btn-primary">View Project</a>
-                </div>
-            </div>
+            <!-- Add project cards here -->
         </div>
     </div>
 </section>
 
-<!-- Skills Section -->
 <section id="skills">
     <div class="container">
         <h2>Technologies & Skills</h2>
-        <div class="skills-category">
-            <h3>Programming Languages</h3>
-            <div class="progress-bar">
-                <div class="progress" style="--progress-width: 90%;"></div>
-            </div>
-        </div>
-        <div class="skills-category">
-            <h3>Machine Learning</h3>
-            <div class="progress-bar">
-                <div class="progress" style="--progress-width: 85%;"></div>
-            </div>
+        <div class="row">
+            <!-- Add skills content here -->
         </div>
     </div>
 </section>
 
-<!-- Contact Section -->
-<section id="contact">
-    <div class="container">
-        <h2>Contact Me</h2>
-        <p>Email: your.email@example.com</p>
-        <p>GitHub: <a href="#">GitHub Profile</a></p>
-    </div>
-</section>
-
-<!-- Footer -->
 <footer>
-    <p>© 2024 Your Name | Designed by You | Follow me on <a href="#">LinkedIn</a></p>
+    <p>Connect with me:</p>
+    <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    <a href="#"><i class="fab fa-github"></i> GitHub</a>
 </footer>
 
 </body>
 </html>
+
