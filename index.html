@@ -1,19 +1,236 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title> | Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f7fa;
-            color: #333;
+            background-color: #1a1a2e;
+            color: #f0f0f0;
+            text-align: center;
         }
+
+        header {
+            background: #16213e;
+            color: #f0f0f0;
+            padding: 40px 20px;
+            border-bottom: 3px solid #0f3460;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+            font-size: 3rem;
+            animation: slideIn 1s ease-out forwards;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            animation: fadeIn 2s ease-out forwards;
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateY(-100px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        section {
+            padding: 60px 20px;
+            background-color: #0f3460;
+            border-top: 3px solid #0f3460;
+            border-bottom: 3px solid #0f3460;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            color: #e94560;
+            margin-bottom: 30px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .card {
+            background: #16213e;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            width: 300px;
+            margin: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+        }
+
+        .card-header {
+            background: #0f3460;
+            color: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px 10px 0 0;
+            font-size: 1.5rem;
+        }
+
+        .card-body {
+            padding: 20px;
+            font-size: 1rem;
+            color: #dcdde1;
+        }
+
+        .card-body p {
+            margin-bottom: 15px;
+        }
+
+        .btn-primary {
+            background-color: #e94560;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #9a2f3c;
+        }
+
+        .skills ul, .certifications ul {
+            list-style: none;
+            padding: 0;
+            font-size: 1.1rem;
+            color: #dcdde1;
+        }
+
+        .skills li, .certifications li {
+            margin: 10px 0;
+        }
+
+        .skills li i, .certifications li i {
+            color: #e94560;
+            margin-right: 10px;
+        }
+
+        footer {
+            background-color: #0f3460;
+            color: #f0f0f0;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        footer a {
+            color: #e94560;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #1a1a2e;
+            color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #16213e;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #e94560;
+        }
+
+        .section {
+            padding: 2rem 4rem;
+            margin: 1rem 0;
+        }
+
+        .skills-category {
+            margin-bottom: 2rem;
+        }
+
+        .skill-container {
+            margin-bottom: 1rem;
+        }
+
+        .skill-name {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .progress-bar {
+            background-color: #16213e;
+            border-radius: 20px;
+            overflow: hidden;
+            margin: 0.5rem 0;
+            height: 20px;
+        }
+
+        .progress {
+            height: 100%;
+            border-radius: 20px;
+            background-color: #e94560;
+            width: 0;
+            animation: grow 2s ease-in-out forwards;
+        }
+
+        @keyframes grow {
+            from { width: 0; }
+            to { width: var(--progress-width); }
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #0f3460;
+            color: #dcdde1;
+        }
+
+        .contact-icons a {
+            color: #e94560;
+            margin: 0 1rem;
+            font-size: 1.5rem;
+        }
+
+        
 
         /* Navbar Styling */
         nav {
@@ -49,122 +266,11 @@
             color: #ffcccb;
         }
 
-        header {
-            background: #4a6fa5;
-            color: white;
-            padding: 100px 20px 60px 20px;
-            text-align: center;
-            border-bottom: 3px solid #335e7e;
-        }
-
-        header h1 {
-            margin-bottom: 10px;
-            font-size: 3rem;
-        }
-
-        section {
-            padding: 60px 20px;
-        }
-
-        h2 {
-            font-size: 2.5rem;
-            color: #4a6fa5;
-            margin-bottom: 30px;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .row {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-
-        .card {
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
-            margin: 20px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-        }
-
-        .card-header {
-            background: #f5f7fa;
-            color: #333;
-            padding: 20px;
-            border-radius: 10px 10px 0 0;
-            font-size: 1.5rem;
-            text-align: center;
-        }
-
-        .card-body {
-            padding: 20px;
-            font-size: 1rem;
-        }
-
-        .btn-primary {
-            background-color: #4a6fa5;
-            border: none;
-            color: white;
-            padding: 10px 20px;
-            text-align: center;
-            display: inline-block;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-            text-decoration: none;
-        }
-
-        .btn-primary:hover {
-            background-color: #335e7e;
-        }
-
-        footer {
-            background-color: #4a6fa5;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        footer a {
-            color: white;
-            margin: 0 10px;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        footer a:hover {
-            color: #ffcccb;
-        }
-
-        /* Responsive */
-        @media only screen and (max-width: 768px) {
-            .row {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            header h1 {
-                font-size: 2.5rem;
-            }
-
-            .card {
-                width: 100%;
-            }
-        }
     </style>
 </head>
 <body>
 
-<nav>
+    <nav>
     <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#education">Education</a></li>
@@ -176,17 +282,18 @@
 
 <header>
     <h1>Welcome to My Portfolio</h1>
-    <p>Hello! I'm a Computer Science student aspiring to be a Software Engineer.</p>
+    <p>Hello! I'm, a Computer Science student aspiring to be a Software Engineer with a focus in Data Science and Machine Learning</p>
+    <img src="https://media.giphy.com/media/gi84IkFRzwube/giphy.gif?cid=790b7611svdechj6yni1mm2obvahmhr68csc6k7qjzz72akz&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="" width="300">
 </header>
 
-<section id="about">
+<section>
     <div class="container">
         <h2>About Me</h2>
-        <p>My love for technology began in high school...</p>
+        <p>My love for technology began in high school, where I studied Computer Science, Mathematics, and Physics at A-level, achieving distinctions. This early passion for tech's potential to solve real-world problems led me to pursue a Bachelor of Science in Computer Science at Africa University, where I’ve maintained a 3.8 GPA. My academic journey has been enriched by deep dives into machine learning, deep learning, and web development.</p>
     </div>
 </section>
 
-<section id="education">
+<section>
     <div class="container">
         <h2>Education</h2>
         <div class="row">
@@ -200,30 +307,35 @@
                     <p><strong>Expected Graduation:</strong> June 2026</p>
                 </div>
             </div>
+
             <div class="card">
                 <div class="card-header">
-                    <i class="fas fa-school"></i> Thornhill High School
+                    <i class="fas fa-school"></i> Thornhill High School (2016 - 2021)
                 </div>
                 <div class="card-body">
                     <p>Advanced Level (Zimsec): Pure Mathematics, Physics, Computer Science</p>
+                    <p><strong>Grades:</strong> All A's</p>
+                    <p><strong>Activities:</strong> Chess Captain, Interact Club</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section id="certifications">
+<section>
     <div class="container">
         <h2>Certifications</h2>
-        <ul>
-            <li><i class="fas fa-certificate"></i> IBM AI Developer Professional Certificate</li>
-            <li><i class="fas fa-certificate"></i> Deep Learning Specialization</li>
-            <li><i class="fas fa-certificate"></i> IBM Machine Learning Professional Certificate</li>
+        <ul class="certifications">
+            <li><i class="fas fa-certificate"></i> IBM AI Developer Professional Certificate (2024)</li>
+            <li><i class="fas fa-certificate"></i> Deep Learning Specialization (2024)</li>
+            <li><i class="fas fa-certificate"></i> IBM Machine Learning Professional Certificate (2024)</li>
+            <li><i class="fas fa-certificate"></i> Andrew Ng's Machine Learning Specialization (2024)</li>
+            <li><i class="fas fa-certificate"></i> CS50 Intro to AI (2024)</li>
         </ul>
     </div>
 </section>
 
-<section id="projects">
+<section>
     <div class="container">
         <h2>Projects</h2>
         <div class="row">
@@ -280,8 +392,7 @@
         </div>
     </div>
 </section>
-
-<!-- Technologies & Skills Section -->
+ <!-- Technologies & Skills Section -->
     <section class="section">
         <h2>Technologies & Skills</h2>
         
@@ -461,13 +572,14 @@
         </div>
     </section>
 
-<footer>
-    <p>Connect with me:</p>
-    <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
-    <a href="#"><i class="fab fa-github"></i> GitHub</a>
-</footer>
+    <footer>
+        <p>Connect with me:</p>
+        <div class="contact-icons">
+            <a href=""><i class="fab fa-linkedin"></i></a>
+            <a href=" "><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
 
 </body>
-</html>
-
+</html> 
 
