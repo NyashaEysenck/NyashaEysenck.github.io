@@ -3,146 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Interactive Portfolio</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <style>
-        * {
+        /* Global Styling */
+        body {
+            font-family: 'Montserrat', sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            background-color: #1a1a2e;
+            color: #f0f0f0;
             scroll-behavior: smooth;
         }
 
-        body {
-            font-family: 'Montserrat', sans-serif;
-            background-color: #f0f0f0;
-            color: #333;
-        }
-
-        header {
-            height: 100vh;
-            background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            text-align: center;
-            position: relative;
-            z-index: 1;
-        }
-
-        header h1 {
-            font-size: 3.5rem;
-            margin-bottom: 15px;
-            animation: fadeInDown 1.5s ease;
-        }
-
-        header p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-            animation: fadeInUp 2s ease;
-        }
-
-        header img {
-            width: 250px;
-            border-radius: 50%;
-            animation: bounce 3s infinite;
-        }
-
+        /* Navigation Bar */
         nav {
             position: fixed;
-            width: 100%;
             top: 0;
-            padding: 15px 0;
-            background: rgba(0, 0, 0, 0.7);
-            z-index: 1000;
+            left: 0;
+            width: 100%;
+            background-color: #0f3460;
             display: flex;
-            justify-content: center;
-            transition: background 0.3s ease;
+            justify-content: space-around;
+            padding: 20px 0;
+            z-index: 1000;
+            border-bottom: 2px solid #e94560;
         }
 
         nav ul {
             list-style: none;
+            margin: 0;
+            padding: 0;
             display: flex;
+            gap: 20px;
         }
 
         nav ul li {
-            margin: 0 15px;
+            display: inline;
         }
 
         nav ul li a {
-            color: white;
-            font-size: 1.1rem;
+            color: #f0f0f0;
             text-decoration: none;
-            padding: 10px 15px;
-            transition: background 0.3s ease;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: color 0.3s ease;
         }
 
         nav ul li a:hover {
-            background: #e94560;
-            border-radius: 5px;
+            color: #e94560;
         }
 
-        section {
-            padding: 80px 20px;
+        /* Header */
+        header {
+            background: #16213e;
+            color: #f0f0f0;
+            padding: 100px 20px 60px;
             text-align: center;
+            border-bottom: 3px solid #0f3460;
         }
 
-        section h2 {
-            font-size: 2.5rem;
-            color: #16213e;
-            margin-bottom: 30px;
-            position: relative;
+        header h1 {
+            font-size: 3rem;
+            animation: slideIn 1s ease-out forwards;
         }
 
-        section h2::after {
-            content: '';
-            width: 80px;
-            height: 4px;
-            background: #e94560;
-            display: block;
-            margin: 15px auto;
-            border-radius: 2px;
+        header p {
+            font-size: 1.2rem;
+            animation: fadeIn 2s ease-out forwards;
+        }
+
+        header img {
+            margin-top: 20px;
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateY(-100px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Section Styling */
+        section {
+            padding: 60px 20px;
+            margin-top: 20px;
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 15px;
         }
 
-        .skills-grid, .projects-grid {
+        h2 {
+            font-size: 2.5rem;
+            color: #e94560;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .row {
             display: flex;
-            justify-content: space-around;
             flex-wrap: wrap;
-            gap: 20px;
+            justify-content: space-around;
         }
 
-        .skills-grid div, .projects-grid div {
-            background: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* Card Styling */
+        .card {
+            background: #16213e;
             border-radius: 10px;
-            padding: 20px;
-            transition: transform 0.3s ease;
-            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            width: 300px;
+            margin: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
         }
 
-        .skills-grid div:hover, .projects-grid div:hover {
+        .card:hover {
             transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
         }
 
+        .card-header {
+            background: #0f3460;
+            color: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px 10px 0 0;
+            font-size: 1.5rem;
+        }
+
+        .card-body {
+            padding: 20px;
+            font-size: 1rem;
+            color: #dcdde1;
+        }
+
+        /* Button Styling */
+        .btn-primary {
+            background-color: #e94560;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #9a2f3c;
+        }
+
+        /* Skills Section */
+        .skills-category {
+            margin-bottom: 2rem;
+        }
+
+        .progress-bar {
+            background-color: #16213e;
+            border-radius: 20px;
+            overflow: hidden;
+            margin: 0.5rem 0;
+            height: 20px;
+        }
+
+        .progress {
+            height: 100%;
+            border-radius: 20px;
+            background-color: #e94560;
+            width: 0;
+            animation: grow 2s ease-in-out forwards;
+        }
+
+        @keyframes grow {
+            from { width: 0; }
+            to { width: var(--progress-width); }
+        }
+
+        /* Footer */
         footer {
             background-color: #0f3460;
-            color: white;
-            text-align: center;
+            color: #f0f0f0;
             padding: 20px;
+            text-align: center;
+            margin-top: 30px;
         }
 
         footer a {
             color: #e94560;
-            margin: 0 10px;
             text-decoration: none;
         }
 
@@ -150,49 +204,33 @@
             text-decoration: underline;
         }
 
-        /* Animations */
-        @keyframes fadeInDown {
-            0% { opacity: 0; transform: translateY(-50px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes fadeInUp {
-            0% { opacity: 0; transform: translateY(50px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-            40% { transform: translateY(-20px); }
-            60% { transform: translateY(-10px); }
-        }
     </style>
 </head>
 <body>
 
-<!-- Navigation Bar -->
+<!-- Navigation -->
 <nav>
     <ul>
         <li><a href="#about">About Me</a></li>
         <li><a href="#education">Education</a></li>
-        <li><a href="#certifications">Certifications</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Technologies & Skills</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
 
-<!-- Header Section -->
+<!-- Header -->
 <header>
-    <h1>Hello, I'm a Software Engineering Enthusiast</h1>
-    <p>Welcome to my interactive portfolio showcasing my journey in AI, ML, and Data Science.</p>
-    <img src="https://media.giphy.com/media/gi84IkFRzwube/giphy.gif" alt="">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Hello! I'm a Computer Science student aspiring to be a Software Engineer with a focus in Data Science and Machine Learning</p>
+    <img src="https://media.giphy.com/media/gi84IkFRzwube/giphy.gif?cid=790b7611svdechj6yni1mm2obvahmhr68csc6k7qjzz72akz&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Animated Gif" width="300">
 </header>
 
-<!-- About Me Section -->
+<!-- About Section -->
 <section id="about">
     <div class="container">
         <h2>About Me</h2>
-        <p>My love for technology began in high school, where I studied Computer Science, Mathematics, and Physics at A-level, achieving distinctions. This early passion for tech's potential to solve real-world problems led me to pursue a Bachelor of Science in Computer Science at Africa University, where I’ve maintained a 3.8 GPA.</p>
+        <p>My love for technology began in high school, where I studied Computer Science, Mathematics, and Physics at A-level, achieving distinctions. This passion for tech's potential led me to pursue a Bachelor of Science in Computer Science at Africa University, maintaining a 3.8 GPA.</p>
     </div>
 </section>
 
@@ -200,21 +238,23 @@
 <section id="education">
     <div class="container">
         <h2>Education</h2>
-        <p><i class="fas fa-graduation-cap"></i> Bachelor of Science in Computer Science | <strong>Africa University</strong> | GPA: 3.8/4.0</p>
-        <p><i class="fas fa-graduation-cap"></i> Advanced Level | <strong>Thornhill High School</strong> | Pure Mathematics, Physics, Computer Science | Grades: All A's</p>
-    </div>
-</section>
-
-<!-- Certifications Section -->
-<section id="certifications">
-    <div class="container">
-        <h2>Certifications</h2>
-        <div class="skills-grid">
-            <div><i class="fas fa-certificate"></i> IBM AI Developer Professional Certificate (2024)</div>
-            <div><i class="fas fa-certificate"></i> Deep Learning Specialization (2024)</div>
-            <div><i class="fas fa-certificate"></i> IBM Machine Learning Professional Certificate (2024)</div>
-            <div><i class="fas fa-certificate"></i> Andrew Ng's Machine Learning Specialization (2024)</div>
-            <div><i class="fas fa-certificate"></i> CS50 Intro to AI (2024)</div>
+        <div class="row">
+            <div class="card">
+                <div class="card-header"><i class="fas fa-graduation-cap"></i> Africa University</div>
+                <div class="card-body">
+                    <p>Computer Science Undergraduate</p>
+                    <p><strong>GPA:</strong> 3.8/4.0</p>
+                    <p><strong>Expected Graduation:</strong> June 2026</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header"><i class="fas fa-school"></i> Thornhill High School</div>
+                <div class="card-body">
+                    <p>Advanced Level: Pure Mathematics, Physics, Computer Science</p>
+                    <p><strong>Grades:</strong> All A's</p>
+                    <p><strong>Activities:</strong> Chess Captain, Interact Club</p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -223,37 +263,57 @@
 <section id="projects">
     <div class="container">
         <h2>Projects</h2>
-        <div class="projects-grid">
-            <div><i class="fas fa-code"></i> Django Event Management Web App</div>
-            <div><i class="fas fa-code"></i> Automatic Vehicle Recognition System</div>
-            <div><i class="fas fa-code"></i> Machine Learning Capstone: Course Recommender System</div>
-            <div><i class="fas fa-code"></i> AI Capstone Project with Deep Learning: ResNet and VGG Models</div>
-            <div><i class="fas fa-code"></i> Applied Data Science Capstone: SpaceX API and Web Scraping</div>
+        <div class="row">
+            <div class="card">
+                <div class="card-header"><i class="fas fa-code"></i> Django Event Management Web App</div>
+                <div class="card-body">
+                    <p>Developed an event management web app with user registration, event upload, and CRUD functionality.</p>
+                    <a href="#" class="btn-primary">View Project</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header"><i class="fas fa-car"></i> Automatic Vehicle Recognition System</div>
+                <div class="card-body">
+                    <p>Flask-based vehicle recognition and registration system using machine learning models.</p>
+                    <a href="#" class="btn-primary">View Project</a>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- Technologies & Skills Section -->
+<!-- Skills Section -->
 <section id="skills">
     <div class="container">
         <h2>Technologies & Skills</h2>
-        <div class="skills-grid">
-            <div><i class="fas fa-laptop-code"></i> Python, Flask, Django, JavaScript</div>
-            <div><i class="fas fa-laptop-code"></i> Machine Learning, Deep Learning, Data Science</div>
-            <div><i class="fas fa-laptop-code"></i> Git, GitHub, Data Visualization (Tableau)</div>
-            <div><i class="fas fa-laptop-code"></i> MongoDB, SQL</div>
+        <div class="skills-category">
+            <h3>Programming Languages</h3>
+            <div class="progress-bar">
+                <div class="progress" style="--progress-width: 90%;"></div>
+            </div>
         </div>
+        <div class="skills-category">
+            <h3>Machine Learning</h3>
+            <div class="progress-bar">
+                <div class="progress" style="--progress-width: 85%;"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <p>Email: your.email@example.com</p>
+        <p>GitHub: <a href="#">GitHub Profile</a></p>
     </div>
 </section>
 
 <!-- Footer -->
 <footer>
-    <p>Connect with me on:</p>
-    <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
-    <a href="#"><i class="fab fa-github"></i> GitHub</a>
-    <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+    <p>© 2024 Your Name | Designed by You | Follow me on <a href="#">LinkedIn</a></p>
 </footer>
 
 </body>
 </html>
-
