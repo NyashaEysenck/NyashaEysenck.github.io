@@ -3,58 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Modern Interactive Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            background-color: #1a1a2e;
-            color: #f0f0f0;
-            text-align: center;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
         }
 
         header {
-            background: #16213e;
-            color: #f0f0f0;
-            padding: 40px 20px;
-            border-bottom: 3px solid #0f3460;
+            height: 100vh;
+            background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            position: relative;
+            z-index: 1;
         }
 
         header h1 {
-            margin-bottom: 10px;
-            font-size: 3rem;
-            animation: slideIn 1s ease-out forwards;
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+            animation: fadeInDown 1.5s ease;
         }
 
         header p {
             font-size: 1.2rem;
-            animation: fadeIn 2s ease-out forwards;
+            margin-bottom: 30px;
+            animation: fadeInUp 2s ease;
         }
 
-        @keyframes slideIn {
-            0% { transform: translateY(-100px); opacity: 0; }
-            100% { transform: translateY(0); opacity: 1; }
-        }
-
-        @keyframes fadeIn {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
+        header img {
+            width: 250px;
+            border-radius: 50%;
+            animation: bounce 3s infinite;
         }
 
         nav {
-            background-color: #0f3460;
-            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            padding: 15px 0;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            transition: background 0.3s ease;
         }
 
         nav ul {
             list-style: none;
-            padding: 0;
-            margin: 0;
             display: flex;
-            justify-content: center;
         }
 
         nav ul li {
@@ -62,49 +73,98 @@
         }
 
         nav ul li a {
-            color: #f0f0f0;
+            color: white;
+            font-size: 1.1rem;
             text-decoration: none;
-            font-size: 1.2rem;
+            padding: 10px 15px;
+            transition: background 0.3s ease;
         }
 
         nav ul li a:hover {
-            color: #e94560;
+            background: #e94560;
+            border-radius: 5px;
         }
 
         section {
-            padding: 60px 20px;
-            background-color: #0f3460;
-            border-top: 3px solid #0f3460;
-            border-bottom: 3px solid #0f3460;
+            padding: 80px 20px;
+            text-align: center;
         }
 
-        h2 {
+        section h2 {
             font-size: 2.5rem;
-            color: #e94560;
+            color: #16213e;
             margin-bottom: 30px;
+            position: relative;
+        }
+
+        section h2::after {
+            content: '';
+            width: 80px;
+            height: 4px;
+            background: #e94560;
+            display: block;
+            margin: 15px auto;
+            border-radius: 2px;
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 15px;
+        }
+
+        .skills-grid, .projects-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .skills-grid div, .projects-grid div {
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .skills-grid div:hover, .projects-grid div:hover {
+            transform: translateY(-10px);
         }
 
         footer {
             background-color: #0f3460;
-            color: #f0f0f0;
+            color: white;
+            text-align: center;
             padding: 20px;
-            margin-top: 30px;
         }
 
         footer a {
             color: #e94560;
-            text-decoration: none;
             margin: 0 10px;
+            text-decoration: none;
         }
 
         footer a:hover {
             text-decoration: underline;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            0% { opacity: 0; transform: translateY(-50px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(50px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-20px); }
+            60% { transform: translateY(-10px); }
         }
     </style>
 </head>
@@ -123,9 +183,9 @@
 
 <!-- Header Section -->
 <header>
-    <h1>Welcome to My Portfolio</h1>
-    <p>Hello! I'm a Computer Science student aspiring to be a Software Engineer with a focus in Data Science and Machine Learning.</p>
-    <img src="https://media.giphy.com/media/gi84IkFRzwube/giphy.gif" alt="" width="300">
+    <h1>Hello, I'm a Software Engineering Enthusiast</h1>
+    <p>Welcome to my interactive portfolio showcasing my journey in AI, ML, and Data Science.</p>
+    <img src="https://media.giphy.com/media/gi84IkFRzwube/giphy.gif" alt="">
 </header>
 
 <!-- About Me Section -->
@@ -149,11 +209,13 @@
 <section id="certifications">
     <div class="container">
         <h2>Certifications</h2>
-        <p><i class="fas fa-certificate"></i> IBM AI Developer Professional Certificate (2024)</p>
-        <p><i class="fas fa-certificate"></i> Deep Learning Specialization (2024)</p>
-        <p><i class="fas fa-certificate"></i> IBM Machine Learning Professional Certificate (2024)</p>
-        <p><i class="fas fa-certificate"></i> Andrew Ng's Machine Learning Specialization (2024)</p>
-        <p><i class="fas fa-certificate"></i> CS50 Intro to AI (2024)</p>
+        <div class="skills-grid">
+            <div><i class="fas fa-certificate"></i> IBM AI Developer Professional Certificate (2024)</div>
+            <div><i class="fas fa-certificate"></i> Deep Learning Specialization (2024)</div>
+            <div><i class="fas fa-certificate"></i> IBM Machine Learning Professional Certificate (2024)</div>
+            <div><i class="fas fa-certificate"></i> Andrew Ng's Machine Learning Specialization (2024)</div>
+            <div><i class="fas fa-certificate"></i> CS50 Intro to AI (2024)</div>
+        </div>
     </div>
 </section>
 
@@ -161,11 +223,13 @@
 <section id="projects">
     <div class="container">
         <h2>Projects</h2>
-        <p><i class="fas fa-code"></i> Django Event Management Web App</p>
-        <p><i class="fas fa-code"></i> Automatic Vehicle Recognition System</p>
-        <p><i class="fas fa-code"></i> Machine Learning Capstone: Course Recommender System</p>
-        <p><i class="fas fa-code"></i> AI Capstone Project with Deep Learning: ResNet and VGG Models</p>
-        <p><i class="fas fa-code"></i> Applied Data Science Capstone: SpaceX API and Web Scraping</p>
+        <div class="projects-grid">
+            <div><i class="fas fa-code"></i> Django Event Management Web App</div>
+            <div><i class="fas fa-code"></i> Automatic Vehicle Recognition System</div>
+            <div><i class="fas fa-code"></i> Machine Learning Capstone: Course Recommender System</div>
+            <div><i class="fas fa-code"></i> AI Capstone Project with Deep Learning: ResNet and VGG Models</div>
+            <div><i class="fas fa-code"></i> Applied Data Science Capstone: SpaceX API and Web Scraping</div>
+        </div>
     </div>
 </section>
 
@@ -173,17 +237,21 @@
 <section id="skills">
     <div class="container">
         <h2>Technologies & Skills</h2>
-        <p><i class="fas fa-laptop-code"></i> Python, Flask, Django, JavaScript, SQL</p>
-        <p><i class="fas fa-laptop-code"></i> Machine Learning, Deep Learning, Data Science</p>
-        <p><i class="fas fa-laptop-code"></i> Git, GitHub, Data Visualization (Tableau), MongoDB</p>
+        <div class="skills-grid">
+            <div><i class="fas fa-laptop-code"></i> Python, Flask, Django, JavaScript</div>
+            <div><i class="fas fa-laptop-code"></i> Machine Learning, Deep Learning, Data Science</div>
+            <div><i class="fas fa-laptop-code"></i> Git, GitHub, Data Visualization (Tableau)</div>
+            <div><i class="fas fa-laptop-code"></i> MongoDB, SQL</div>
+        </div>
     </div>
 </section>
 
 <!-- Footer -->
 <footer>
-    <p>Connect with me:</p>
-    <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-    <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    <p>Connect with me on:</p>
+    <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    <a href="#"><i class="fab fa-github"></i> GitHub</a>
+    <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
 </footer>
 
 </body>
