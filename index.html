@@ -3,42 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Portfolio | [Your Name]</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Montserrat', sans-serif;
-            background-color: #1a1a2e;
-            color: #f0f0f0;
             margin: 0;
             padding: 0;
+            background-color: #1a1a2e;
+            color: #f0f0f0;
         }
 
         /* Navbar */
         nav {
             background-color: #16213e;
-            padding: 1rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 100;
         }
 
         nav ul {
-            list-style: none;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
             display: flex;
-            gap: 1.5rem;
+            justify-content: center;
         }
 
         nav ul li {
-            display: inline;
+            margin: 0 20px;
         }
 
         nav ul li a {
-            color: #f0f0f0;
             text-decoration: none;
-            font-size: 1rem;
-            transition: color 0.3s ease;
+            color: #f0f0f0;
+            font-size: 1.2rem;
+            transition: color 0.3s;
         }
 
         nav ul li a:hover {
@@ -46,35 +49,47 @@
         }
 
         header {
-            background-color: #16213e;
-            padding: 2rem;
+            background: #16213e;
+            padding: 60px 20px;
             text-align: center;
+            border-bottom: 3px solid #0f3460;
         }
 
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            color: #f0f0f0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        section {
+            padding: 60px 20px;
         }
 
         h2 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
             color: #e94560;
         }
 
-        .section {
-            padding: 2rem 4rem;
-            margin: 1rem 0;
-        }
-
-        /* Common Styles */
         .container {
             max-width: 1200px;
             margin: 0 auto;
         }
 
+        /* Project Cards */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
         .card {
-            background: #16213e;
+            background-color: #16213e;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
             width: 300px;
@@ -87,25 +102,37 @@
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
         }
 
+        .card-header {
+            background-color: #0f3460;
+            padding: 20px;
+            font-size: 1.5rem;
+            color: #f0f0f0;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .card-body {
+            padding: 20px;
+            color: #dcdde1;
+        }
+
         .btn-primary {
             background-color: #e94560;
-            border: none;
-            color: white;
             padding: 10px 20px;
-            text-decoration: none;
             border-radius: 5px;
-            transition: background-color 0.3s ease;
+            color: white;
+            text-decoration: none;
         }
 
         .btn-primary:hover {
             background-color: #9a2f3c;
         }
 
+        /* Footer */
         footer {
-            text-align: center;
-            padding: 1rem;
             background-color: #0f3460;
+            padding: 20px;
             color: #dcdde1;
+            text-align: center;
         }
 
         footer a {
@@ -122,112 +149,98 @@
 
 <!-- Navbar -->
 <nav>
-    <div class="logo">
-        <h3>My Portfolio</h3>
-    </div>
     <ul>
         <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
 
-<!-- Header Section -->
+<!-- Header -->
 <header>
     <h1>Welcome to My Portfolio</h1>
-    <p>Aspiring Software Engineer | Data Scientist | Machine Learning Enthusiast</p>
+    <p>Software Engineering, Data Science, and Machine Learning</p>
 </header>
 
 <!-- About Section -->
-<section id="about" class="section">
+<section id="about">
     <div class="container">
         <h2>About Me</h2>
-        <p>I'm a Computer Science student with a passion for Software Engineering, Data Science, and Machine Learning. I have a strong background in mathematics, physics, and computer science, achieving distinctions in all subjects at A-level.</p>
-    </div>
-</section>
-
-<!-- Education Section -->
-<section id="education" class="section">
-    <div class="container">
-        <h2>Education</h2>
-        <div class="card">
-            <div class="card-header">Africa University</div>
-            <div class="card-body">
-                <p><strong>Degree:</strong> BSc in Computer Science</p>
-                <p><strong>GPA:</strong> 3.8/4.0</p>
-                <p><strong>Graduation:</strong> June 2026</p>
-            </div>
-        </div>
+        <p>I'm a passionate Computer Science undergraduate with a focus on Software Engineering, Data Science, and Machine Learning. I have completed numerous projects and certifications, continuously enhancing my skills in technology.</p>
     </div>
 </section>
 
 <!-- Projects Section -->
-<section id="projects" class="section">
+<section id="projects">
     <div class="container">
         <h2>Projects</h2>
         <div class="row">
+            <!-- Project 1 -->
             <div class="card">
-                <div class="card-header">Django Event Management Web App</div>
+                <div class="card-header">
+                    Django Event Management Web App
+                </div>
                 <div class="card-body">
-                    <p>A web app built with Django for event management, featuring CRUD operations and sentiment analysis.</p>
+                    <p>A web app for managing events, with user registration, email notifications, and sentiment analysis.</p>
+                    <a href="#" class="btn-primary">View Project</a>
                 </div>
             </div>
+            <!-- Project 2 -->
             <div class="card">
-                <div class="card-header">Automatic Vehicle Recognition System</div>
+                <div class="card-header">
+                    Automatic Vehicle Recognition System
+                </div>
                 <div class="card-body">
-                    <p>A Flask-based vehicle recognition system using OpenCV for plate detection.</p>
+                    <p>Flask-based vehicle recognition system with OpenCV for real-time license plate detection.</p>
+                    <a href="#" class="btn-primary">View Project</a>
                 </div>
             </div>
+            <!-- Add more projects as needed -->
         </div>
     </div>
 </section>
 
 <!-- Skills Section -->
-<section id="skills" class="section">
+<section id="skills">
     <div class="container">
         <h2>Skills</h2>
-        <div>
-            <h3>Software Engineering</h3>
-            <ul>
-                <li>Python, C++, JavaScript</li>
-                <li>Flask, Django, React</li>
-                <li>SQL, MongoDB</li>
-            </ul>
+        <div class="row">
+            <div class="col">
+                <h3>Software Engineering</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                    <li>SQL</li>
+                    <li>Django</li>
+                    <li>Flask</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Data Science</h3>
+                <ul>
+                    <li>Pandas</li>
+                    <li>NumPy</li>
+                    <li>Matplotlib</li>
+                    <li>Data Wrangling</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Machine Learning</h3>
+                <ul>
+                    <li>Scikit-learn</li>
+                    <li>TensorFlow</li>
+                    <li>OpenCV</li>
+                    <li>EasyOCR</li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <h3>Data Science</h3>
-            <ul>
-                <li>Pandas, NumPy</li>
-                <li>Scikit-learn</li>
-                <li>Data Wrangling and Visualization</li>
-            </ul>
-        </div>
-        <div>
-            <h3>Machine Learning</h3>
-            <ul>
-                <li>TensorFlow, Keras</li>
-                <li>YOLO, ResNet, VGG</li>
-                <li>Model Training and Optimization</li>
-            </ul>
-        </div>
-    </div>
-</section>
-
-<!-- Contact Section -->
-<section id="contact" class="section">
-    <div class="container">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
     </div>
 </section>
 
 <!-- Footer -->
-<footer>
-    <p>&copy; 2024 My Portfolio. All rights reserved.</p>
-    <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
+<footer id="contact">
+    <p>&copy; 2024 Your Name | <a href="mailto:your.email@example.com">Contact Me</a></p>
 </footer>
 
 </body>
