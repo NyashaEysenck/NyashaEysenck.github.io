@@ -11,85 +11,70 @@
             font-family: 'Montserrat', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f4f8;
+            background-color: #f5f7fa;
             color: #333;
         }
 
-        header {
-            background: #2d3e50;
-            color: #fff;
-            padding: 20px 0;
-            border-bottom: 3px solid #1f2a38;
-            position: relative;
+        /* Navbar Styling */
+        nav {
+            background-color: #4a6fa5;
+            color: white;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
         }
 
-        header .nav-bar {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-        }
-
-        header .nav-bar ul {
+        nav ul {
             list-style: none;
             margin: 0;
             padding: 0;
             display: flex;
+            justify-content: center;
         }
 
-        header .nav-bar ul li {
-            margin-right: 20px;
+        nav ul li {
+            margin: 0 20px;
         }
 
-        header .nav-bar ul li a {
-            color: #fff;
+        nav ul li a {
+            color: white;
             text-decoration: none;
-            font-weight: 700;
-            font-size: 1rem;
-            transition: color 0.3s;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
         }
 
-        header .nav-bar ul li a:hover {
-            color: #e94560;
+        nav ul li a:hover {
+            color: #ffcccb;
+        }
+
+        header {
+            background: #4a6fa5;
+            color: white;
+            padding: 100px 20px 60px 20px;
+            text-align: center;
+            border-bottom: 3px solid #335e7e;
         }
 
         header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-            animation: slideIn 1s ease-out forwards;
-        }
-
-        header p {
-            font-size: 1.2rem;
-            animation: fadeIn 2s ease-out forwards;
-        }
-
-        @keyframes slideIn {
-            0% { transform: translateY(-100px); opacity: 0; }
-            100% { transform: translateY(0); opacity: 1; }
-        }
-
-        @keyframes fadeIn {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
+            margin-bottom: 10px;
+            font-size: 3rem;
         }
 
         section {
             padding: 60px 20px;
-            background-color: #ffffff;
-            border-top: 3px solid #e94560;
-            border-bottom: 3px solid #e94560;
         }
 
         h2 {
-            font-size: 2rem;
-            color: #2d3e50;
-            margin-bottom: 20px;
+            font-size: 2.5rem;
+            color: #4a6fa5;
+            margin-bottom: 30px;
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
         }
 
         .row {
@@ -99,7 +84,7 @@
         }
 
         .card {
-            background: #ffffff;
+            background: white;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             width: 300px;
@@ -113,140 +98,91 @@
         }
 
         .card-header {
-            background: #e94560;
-            color: #fff;
-            padding: 15px;
+            background: #f5f7fa;
+            color: #333;
+            padding: 20px;
             border-radius: 10px 10px 0 0;
             font-size: 1.5rem;
+            text-align: center;
         }
 
         .card-body {
             padding: 20px;
             font-size: 1rem;
-            color: #555;
-        }
-
-        .card-body p {
-            margin-bottom: 15px;
         }
 
         .btn-primary {
-            background-color: #e94560;
+            background-color: #4a6fa5;
             border: none;
             color: white;
             padding: 10px 20px;
             text-align: center;
-            text-decoration: none;
             display: inline-block;
-            font-size: 1rem;
             border-radius: 5px;
             transition: background-color 0.3s ease;
+            text-decoration: none;
         }
 
         .btn-primary:hover {
-            background-color: #d7365e;
-        }
-
-        .skills ul, .certifications ul {
-            list-style: none;
-            padding: 0;
-            font-size: 1.1rem;
-            color: #555;
-        }
-
-        .skills li, .certifications li {
-            margin: 10px 0;
-        }
-
-        .skills li i, .certifications li i {
-            color: #e94560;
-            margin-right: 10px;
+            background-color: #335e7e;
         }
 
         footer {
-            background-color: #2d3e50;
-            color: #fff;
+            background-color: #4a6fa5;
+            color: white;
             padding: 20px;
             text-align: center;
         }
 
         footer a {
-            color: #e94560;
-            text-decoration: none;
+            color: white;
             margin: 0 10px;
+            text-decoration: none;
+            transition: color 0.3s ease;
         }
 
         footer a:hover {
-            text-decoration: underline;
+            color: #ffcccb;
         }
 
-        .skills-category {
-            margin-bottom: 2rem;
-        }
+        /* Responsive */
+        @media only screen and (max-width: 768px) {
+            .row {
+                flex-direction: column;
+                align-items: center;
+            }
 
-        .skill-container {
-            margin-bottom: 1rem;
-        }
+            header h1 {
+                font-size: 2.5rem;
+            }
 
-        .skill-name {
-            font-size: 1.2rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .progress-bar {
-            background-color: #e0e0e0;
-            border-radius: 20px;
-            overflow: hidden;
-            margin: 0.5rem 0;
-            height: 20px;
-        }
-
-        .progress {
-            height: 100%;
-            border-radius: 20px;
-            background-color: #e94560;
-            width: 0;
-            animation: grow 2s ease-in-out forwards;
-        }
-
-        @keyframes grow {
-            from { width: 0; }
-            to { width: var(--progress-width); }
-        }
-
-        .language-container {
-            margin-bottom: 1rem;
-        }
-
-        .language-name {
-            font-size: 1.2rem;
-            margin-bottom: 0.5rem;
+            .card {
+                width: 100%;
+            }
         }
     </style>
 </head>
 <body>
 
+<nav>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+    </ul>
+</nav>
+
 <header>
-    <div class="nav-bar">
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#languages">Languages</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
     <h1>Welcome to My Portfolio</h1>
-    <p>Hello! I'm a Computer Science student aspiring to be a Software Engineer with a focus on Data Science and Machine Learning.</p>
-    <img src="https://media.giphy.com/media/gi84IkFRzwube/giphy.gif?cid=790b7611svdechj6yni1mm2obvahmhr68csc6k7qjzz72akz&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="" width="300">
+    <p>Hello! I'm a Computer Science student aspiring to be a Software Engineer.</p>
 </header>
 
 <section id="about">
     <div class="container">
         <h2>About Me</h2>
-        <p>My love for technology began in high school, where I studied Computer Science, Mathematics, and Physics at A-level, achieving distinctions. This early passion for tech's potential to solve real-world problems led me to pursue a Bachelor of Science in Computer Science at Africa University, where I’ve maintained a 3.8 GPA. My academic journey has been enriched by deep dives into machine learning, deep learning, and web development.</p>
+        <p>My love for technology began in high school...</p>
     </div>
 </section>
 
@@ -264,15 +200,12 @@
                     <p><strong>Expected Graduation:</strong> June 2026</p>
                 </div>
             </div>
-
             <div class="card">
                 <div class="card-header">
-                    <i class="fas fa-school"></i> Thornhill High School (2016 - 2021)
+                    <i class="fas fa-school"></i> Thornhill High School
                 </div>
                 <div class="card-body">
                     <p>Advanced Level (Zimsec): Pure Mathematics, Physics, Computer Science</p>
-                    <p><strong>Grades:</strong> All A's</p>
-                    <p><strong>Activities:</strong> Chess Captain, Interact Club</p>
                 </div>
             </div>
         </div>
@@ -282,11 +215,10 @@
 <section id="certifications">
     <div class="container">
         <h2>Certifications</h2>
-        <ul class="certifications">
+        <ul>
             <li><i class="fas fa-certificate"></i> IBM AI Developer Professional Certificate</li>
             <li><i class="fas fa-certificate"></i> Deep Learning Specialization</li>
             <li><i class="fas fa-certificate"></i> IBM Machine Learning Professional Certificate</li>
-            <li><i class="fas fa-certificate"></i> CS50 Introduction to AI</li>
         </ul>
     </div>
 </section>
@@ -295,155 +227,244 @@
     <div class="container">
         <h2>Projects</h2>
         <div class="row">
+            <!-- Project 1 -->
             <div class="card">
                 <div class="card-header">
-                    <i class="fas fa-calendar-alt"></i> Django Event Management Web App
+                    <i class="fas fa-code"></i> Django Event Management Web App
                 </div>
                 <div class="card-body">
-                    <p>A comprehensive event management system built with Django. Features include event uploads, user registration, CRUD operations, email notifications, sentiment analysis using a custom-trained model, and text generation with Gemini.</p>
-                    <a href="https://github.com/your-repo" class="btn-primary">View Project</a>
+                    <p>A comprehensive web application for managing events with features like user registration, email notifications, and sentiment analysis.</p>
+                    <a href=" " class="btn-primary">View Project</a>
                 </div>
             </div>
-
+            <!-- Project 2 -->
             <div class="card">
                 <div class="card-header">
                     <i class="fas fa-car"></i> Automatic Vehicle Recognition System
                 </div>
                 <div class="card-body">
-                    <p>Developed a Flask-based system for automatic vehicle recognition and registration. The system includes real-time vehicle detection, license plate recognition, and database integration for vehicle registration.</p>
-                    <a href="https://github.com/your-repo" class="btn-primary">View Project</a>
+                    <p>A Flask-based system integrating OpenCV for real-time vehicle plate detection and recognition.</p>
+                    <a href="”  class="btn-primary">View Project</a>
                 </div>
             </div>
-
+            <!-- Project 3 -->
             <div class="card">
                 <div class="card-header">
-                    <i class="fas fa-rocket"></i> Applied Data Science Capstone
+                    <i class="fas fa-stream"></i> Machine Learning Capstone
                 </div>
                 <div class="card-body">
-                    <p>Created an interactive map and data visualization platform using data from SpaceX API and Wikipedia. The project involved web scraping, data cleaning, and creating a Streamlit app to display and analyze the data.</p>
-                    <a href="https://github.com/your-repo" class="btn-primary">View Project</a>
+                    <p>A complete Streamlit app developed as part of the IBM Machine Learning Capstone, featuring model training and evaluation.</p>
+                    <a href=" "  class="btn-primary">View Project</a>
                 </div>
             </div>
-
+            <!-- Project 4 -->
             <div class="card">
                 <div class="card-header">
                     <i class="fas fa-brain"></i> AI Capstone Project with Deep Learning
                 </div>
                 <div class="card-body">
-                    <p>Implemented classification models using ResNet and VGG architectures, achieving over 98% accuracy on the test set. The project focused on model training, evaluation, and comparing results between different architectures.</p>
-                    <a href="https://github.com/your-repo" class="btn-primary">View Project</a>
+                    <p>An AI Capstone Project that involved using pretraining on ResNet and VGG models to achieve high classification accuracy.</p>
+                    <a href=" class="btn-primary">View Project</a>
                 </div>
             </div>
-
+            <!-- Project 5 -->
             <div class="card">
                 <div class="card-header">
-                    <i class="fas fa-gear"></i> TensorFlow Advanced Techniques
+                    <i class="fas fa-globe"></i> Applied Data Science Capstone
                 </div>
                 <div class="card-body">
-                    <p>Showcased advanced TensorFlow techniques, including custom models, layers, and loss functions. The repository also demonstrates custom and distributed training methods to optimize deep learning models.</p>
-                    <a href="https://github.com/your-repo" class="btn-primary">View Project</a>
+                    <p>A data science project involving data collection, wrangling, analysis, and visualization using real-world datasets.</p>
+                    <a href=" " class="btn-primary">View Project</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section id="skills">
-    <div class="container">
-        <h2>Skills & Technologies</h2>
-        <div class="row">
-            <div class="skills-category">
-                <h3>Programming Languages</h3>
-                <div class="language-container">
-                    <div class="language-name">Python</div>
-                    <div class="progress-bar">
-                        <div class="progress" style="--progress-width: 90%;"></div>
-                    </div>
-                </div>
-                <div class="language-container">
-                    <div class="language-name">JavaScript</div>
-                    <div class="progress-bar">
-                        <div class="progress" style="--progress-width: 70%;"></div>
-                    </div>
-                </div>
-                <div class="language-container">
-                    <div class="language-name">Java</div>
-                    <div class="progress-bar">
-                        <div class="progress" style="--progress-width: 60%;"></div>
-                    </div>
+<!-- Technologies & Skills Section -->
+    <section class="section">
+        <h2>Technologies & Skills</h2>
+        
+        <!-- Programming Languages -->
+        <div class="skills-category">
+            <h3>Programming Languages</h3>
+            <div class="skill-container">
+                <div class="skill-name">Python <i class="fab fa-python"></i></div>
+                <div class="progress-bar">
+                    <div class="progress" style="--progress-width: 90%;"></div>
                 </div>
             </div>
-
-            <div class="skills-category">
-                <h3>Machine Learning & AI</h3>
-                <div class="skill-container">
-                    <div class="skill-name">TensorFlow</div>
-                    <div class="progress-bar">
-                        <div class="progress" style="--progress-width: 85%;"></div>
-                    </div>
-                </div>
-                <div class="skill-container">
-                    <div class="skill-name">PyTorch</div>
-                    <div class="progress-bar">
-                        <div class="progress" style="--progress-width: 80%;"></div>
-                    </div>
-                </div>
-                <div class="skill-container">
-                    <div class="skill-name">Scikit-Learn</div>
-                    <div class="progress-bar">
-                        <div class="progress" style="--progress-width: 75%;"></div>
-                    </div>
+            <div class="skill-container">
+                <div class="skill-name">JavaScript <i class="fab fa-js-square"></i></div>
+                <div class="progress-bar">
+                    <div class="progress" style="--progress-width: 80%;"></div>
                 </div>
             </div>
-
-            <div class="skills-category">
-                <h3>Web Development</h3>
-                <div class="skill-container">
-                    <div class="skill-name">Django</div>
-                    <div class="progress-bar">
-                        <div class="progress" style="--progress-width: 80%;"></div>
-                    </div>
+            <div class="skill-container">
+                <div class="skill-name">C++ <i class="fab fa-cuttlefish"></i></div>
+                <div class="progress-bar">
+                    <div class="progress" style="--progress-width: 75%;"></div>
                 </div>
-                <div class="skill-container">
-                    <div class="skill-name">Flask</div>
-                    <div class="progress-bar">
-                        <div class="progress" style="--progress-width: 70%;"></div>
-                    </div>
-                </div>
-                <div class="skill-container">
-                    <div class="skill-name">HTML/CSS</div>
-                    <div class="progress-bar">
-                        <div class="progress" style="--progress-width: 85%;"></div>
-                    </div>
+            </div>
+            <div class="skill-container">
+                <div class="skill-name">SQL <i class="fas fa-database"></i></div>
+                <div class="progress-bar">
+                    <div class="progress" style="--progress-width: 70%;"></div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
 
-<section id="languages">
-    <div class="container">
-        <h2>Languages</h2>
-        <ul>
-            <li>English (Fluent)</li>
-            <li>Shona (Native)</li>
-        </ul>
-    </div>
-</section>
+        <!-- Frameworks -->
+        <div class="skills-category">
+            <h3>Frameworks</h3>
+            <div class="skill-container">
+                <div class="skill-name">Django <i class="fab fa-python"></i></div>
+                <div class="progress-bar">
+                    <div class="progress" style="--progress-width: 85%;"></div>
+                </div>
+            </div>
+            <div class="skill-container">
+                <div class="skill-name">Flask <i class="fab fa-python"></i></div>
+                <div class="progress-bar">
+                    <div class="progress" style="--progress-width: 80%;"></div>
+                </div>
+            </div>
+        </div>
 
-<section id="contact">
-    <div class="container">
-        <h2>Contact Me</h2>
-        <p>If you'd like to get in touch, please reach out to me via email or connect with me on LinkedIn.</p>
-        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/your-profile">linkedin.com/in/your-profile</a></p>
-    </div>
-</section>
+        <!-- Libraries -->
+        <div class="skills-category">
+            <h3>Libraries</h3>
+            <div class="skill-container">
+                <div class="skill-name">OpenCV <i class="fas fa-camera-retro"></i></div>
+                <div class="progress-bar">
+                    <div class="progress" style="--progress-width: 70%;"></div>
+                </div>
+            </div>
+            <div class="skill-container">
+                <div class="skill-name">EasyOCR <i class="fas fa-text-width"></i></div>
+                <div class="progress-bar">
+                    <div class="progress" style="--progress-width: 65%;"></div>
+                </div>
+            </div>
+            <div class="skill-container">
+                <div class="skill-name">TensorFlow <i class="fas fa-brain"></i></div>
+                <div class="progress-bar">
+                    <div class="progress" style="--progress-width: 75%;"></div>
+                </div>
+            </div>
+            <div class="skill-container">
+                <div class="skill-name">Scikit-learn <i class="fas fa-chart-line"></i></div>
+                <div class="progress-bar">
+                    <div class="progress" style="--progress-width: 80%;"></div>
+                </div>
+            </div>
+            <div class="skill-container">
+                <div class="skill-name">Pandas <i class="fas fa-table"></i></div>
+                <div class="progress-bar">
+                    <div class="progress" style="--progress-width: 85%;"></div>
+                </div>
+            </div>
+            <div class="skill-container">
+                <div class="skill-name">Numpy <i class="fas fa-cogs"></i></div>
+                <div class="progress-bar">
+                    <div class="progress" style="--progress-width: 90%;"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skills-category">
+            <h3>Tools</h3>
+            <div class="skill-container">
+                <div class="skill-name">Git <i class="fab fa-git"></i></div>
+                <div class="progress-bar">
+                    <div class="progress" style="--progress-width: 80%;"></div>
+                </div>
+            </div>
+            <div class="skill-container">
+                <div class="skill-name">Docker <i class="fab fa-docker"></i></div>
+                <div class="progress-bar">
+                    <div class="progress" style="--progress-width: 70%;"></div>
+                </div>
+            </div>
+            <div class="skill-container">
+                <div class="skill-name">Jupyter Notebook <i class="fas fa-file-code"></i></div>
+                <div class="progress-bar">
+                    <div class="progress" style="--progress-width: 85%;"></div>
+                </div>
+            </div>
+            <div class="skill-container">
+                <div class="skill-name">MySQL <i class="fas fa-database"></i></div>
+                <div class="progress-bar">
+                    <div class="progress" style="--progress-width: 75%;"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Other Skills -->
+        <div class="skills-category">
+            <h3>Other Skills</h3>
+            <div class="skill-container">
+                <div class="skill-name">Data Science <i class="fas fa-chart-bar"></i></div>
+                <div class="progress-bar">
+                    <div class="progress" style="--progress-width: 80%;"></div>
+                </div>
+            </div>
+            <div class="skill-container">
+                <div class="skill-name">Machine Learning <i class="fas fa-brain"></i></div>
+                <div class="progress-bar">
+                    <div class="progress" style="--progress-width: 85%;"></div>
+                </div>
+            </div>
+            <div class="skill-container">
+                <div class="skill-name">Deep Learning <i class="fas fa-network-wired"></i></div>
+                <div class="progress-bar">
+                    <div class="progress" style="--progress-width: 75%;"></div>
+                </div>
+            </div>
+            <div class="skill-container">
+                <div class="skill-name">Computer Vision <i class="fas fa-eye"></i></div>
+                <div class="progress-bar">
+                    <div class="progress" style="--progress-width: 70%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Spoken Languages Section -->
+    <section class="section">
+        <h2>Spoken Languages</h2>
+        <div class="skills">
+            
+            <!-- Language 1 -->
+            <div class="language-container">
+                <div class="language-name">English <i class="fas fa-globe"></i></div>
+                <div class="progress-bar">
+                    <div class="progress" style="--progress-width: 100%;"></div>
+                </div>
+            </div>
+             <!-- Language 3 -->
+            <div class="language-container">
+                <div class="language-name"> <i class="fas fa-globe"></i></div>
+                <div class="progress-bar">
+                    <div class="progress" style="--progress-width: 100%;"></div>
+                </div>
+            </div>
+            <!-- Language 2 -->
+            <div class="language-container">
+                <div class="language-name">Portuguese <i class="fas fa-globe"></i></div>
+                <div class="progress-bar">
+                    <div class="progress" style="--progress-width: 50%;"></div>
+                </div>
+            </div>
+           
+        </div>
+    </section>
 
 <footer>
     <p>Connect with me:</p>
-    <a href="https://www.linkedin.com/in/your-profile" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-    <a href="https://github.com/your-repo" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    <a href="#"><i class="fab fa-github"></i> GitHub</a>
 </footer>
 
 </body>
