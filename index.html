@@ -3,160 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nyasha Gandah | Portfolio</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #1a1a2e;
-            color: #f0f0f0;
-            text-align: center;
-        }
-
-        header {
-            background: #16213e;
-            color: #f0f0f0;
-            padding: 40px 20px;
-            border-bottom: 3px solid #0f3460;
-        }
-
-        header h1 {
-            margin-bottom: 10px;
-            font-size: 3rem;
-            animation: slideIn 1s ease-out forwards;
-        }
-
-        header p {
-            font-size: 1.2rem;
-            animation: fadeIn 2s ease-out forwards;
-        }
-
-        @keyframes slideIn {
-            0% { transform: translateY(-100px); opacity: 0; }
-            100% { transform: translateY(0); opacity: 1; }
-        }
-
-        @keyframes fadeIn {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
-        }
-
-        section {
-            padding: 60px 20px;
-            background-color: #0f3460;
-            border-top: 3px solid #0f3460;
-            border-bottom: 3px solid #0f3460;
-        }
-
-        h2 {
-            font-size: 2.5rem;
-            color: #e94560;
-            margin-bottom: 30px;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        .row {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-
-        .card {
-            background: #16213e;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-            width: 300px;
-            margin: 20px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
-        }
-
-        .card-header {
-            background: #0f3460;
-            color: #f0f0f0;
-            padding: 20px;
-            border-radius: 10px 10px 0 0;
-            font-size: 1.5rem;
-        }
-
-        .card-body {
-            padding: 20px;
-            font-size: 1rem;
-            color: #dcdde1;
-        }
-
-        .card-body p {
-            margin-bottom: 15px;
-        }
-
-        .btn-primary {
-            background-color: #e94560;
-            border: none;
-            color: white;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 1rem;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn-primary:hover {
-            background-color: #9a2f3c;
-        }
-
-        .skills ul, .certifications ul {
-            list-style: none;
-            padding: 0;
-            font-size: 1.1rem;
-            color: #dcdde1;
-        }
-
-        .skills li, .certifications li {
-            margin: 10px 0;
-        }
-
-        .skills li i, .certifications li i {
-            color: #e94560;
-            margin-right: 10px;
-        }
-
-        footer {
-            background-color: #0f3460;
-            color: #f0f0f0;
-            padding: 20px;
-            margin-top: 30px;
-        }
-
-        footer a {
-            color: #e94560;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
         body {
             font-family: 'Montserrat', sans-serif;
             background-color: #1a1a2e;
             color: #f0f0f0;
             margin: 0;
             padding: 0;
+        }
+
+        /* Navbar */
+        nav {
+            background-color: #16213e;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: #f0f0f0;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #e94560;
         }
 
         header {
@@ -181,38 +67,38 @@
             margin: 1rem 0;
         }
 
-        .skills-category {
-            margin-bottom: 2rem;
+        /* Common Styles */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
-        .skill-container {
-            margin-bottom: 1rem;
+        .card {
+            background: #16213e;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            width: 300px;
+            margin: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .skill-name {
-            font-size: 1.2rem;
-            margin-bottom: 0.5rem;
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
         }
 
-        .progress-bar {
-            background-color: #16213e;
-            border-radius: 20px;
-            overflow: hidden;
-            margin: 0.5rem 0;
-            height: 20px;
-        }
-
-        .progress {
-            height: 100%;
-            border-radius: 20px;
+        .btn-primary {
             background-color: #e94560;
-            width: 0;
-            animation: grow 2s ease-in-out forwards;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
 
-        @keyframes grow {
-            from { width: 0; }
-            to { width: var(--progress-width); }
+        .btn-primary:hover {
+            background-color: #9a2f3c;
         }
 
         footer {
@@ -222,315 +108,127 @@
             color: #dcdde1;
         }
 
-        .contact-icons a {
+        footer a {
             color: #e94560;
-            margin: 0 1rem;
-            font-size: 1.5rem;
+            text-decoration: none;
         }
 
+        footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
 
+<!-- Navbar -->
+<nav>
+    <div class="logo">
+        <h3>My Portfolio</h3>
+    </div>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Header Section -->
 <header>
     <h1>Welcome to My Portfolio</h1>
-    <p>Hello! I'm Nyasha, a Computer Science student aspiring to be a Software Engineer with a focus in Data Science and Machine Learning</p>
-    <img src="https://media.giphy.com/media/gi84IkFRzwube/giphy.gif?cid=790b7611svdechj6yni1mm2obvahmhr68csc6k7qjzz72akz&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="" width="300">
+    <p>Aspiring Software Engineer | Data Scientist | Machine Learning Enthusiast</p>
 </header>
 
-<section>
+<!-- About Section -->
+<section id="about" class="section">
     <div class="container">
         <h2>About Me</h2>
-        <p>My love for technology began in high school, where I studied Computer Science, Mathematics, and Physics at A-level, achieving distinctions. This early passion for tech's potential to solve real-world problems led me to pursue a Bachelor of Science in Computer Science at Africa University, where I’ve maintained a 3.8 GPA. My academic journey has been enriched by deep dives into machine learning, deep learning, and web development.</p>
+        <p>I'm a Computer Science student with a passion for Software Engineering, Data Science, and Machine Learning. I have a strong background in mathematics, physics, and computer science, achieving distinctions in all subjects at A-level.</p>
     </div>
 </section>
 
-<section>
+<!-- Education Section -->
+<section id="education" class="section">
     <div class="container">
         <h2>Education</h2>
-        <div class="row">
-            <div class="card">
-                <div class="card-header">
-                    <i class="fas fa-graduation-cap"></i> Africa University
-                </div>
-                <div class="card-body">
-                    <p>Computer Science Undergraduate</p>
-                    <p><strong>GPA:</strong> 3.8/4.0</p>
-                    <p><strong>Expected Graduation:</strong> June 2026</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header">
-                    <i class="fas fa-school"></i> Thornhill High School (2016 - 2021)
-                </div>
-                <div class="card-body">
-                    <p>Advanced Level (Zimsec): Pure Mathematics, Physics, Computer Science</p>
-                    <p><strong>Grades:</strong> All A's</p>
-                    <p><strong>Activities:</strong> Chess Captain, Interact Club</p>
-                </div>
+        <div class="card">
+            <div class="card-header">Africa University</div>
+            <div class="card-body">
+                <p><strong>Degree:</strong> BSc in Computer Science</p>
+                <p><strong>GPA:</strong> 3.8/4.0</p>
+                <p><strong>Graduation:</strong> June 2026</p>
             </div>
         </div>
     </div>
 </section>
 
-<section>
-    <div class="container">
-        <h2>Certifications</h2>
-        <ul class="certifications">
-            <li><i class="fas fa-certificate"></i> IBM AI Developer Professional Certificate (2024)</li>
-            <li><i class="fas fa-certificate"></i> Deep Learning Specialization (2024)</li>
-            <li><i class="fas fa-certificate"></i> IBM Machine Learning Professional Certificate (2024)</li>
-            <li><i class="fas fa-certificate"></i> Andrew Ng's Machine Learning Specialization (2024)</li>
-            <li><i class="fas fa-certificate"></i> CS50 Intro to AI (2024)</li>
-        </ul>
-    </div>
-</section>
-
-<section>
+<!-- Projects Section -->
+<section id="projects" class="section">
     <div class="container">
         <h2>Projects</h2>
         <div class="row">
-            <!-- Project 1 -->
             <div class="card">
-                <div class="card-header">
-                    <i class="fas fa-code"></i> Django Event Management Web App
-                </div>
+                <div class="card-header">Django Event Management Web App</div>
                 <div class="card-body">
-                    <p>A comprehensive web application for managing events with features like user registration, email notifications, and sentiment analysis.</p>
-                    <a href="https://github.com/NyashaEysenck/Event-Hub" class="btn-primary">View Project</a>
+                    <p>A web app built with Django for event management, featuring CRUD operations and sentiment analysis.</p>
                 </div>
             </div>
-            <!-- Project 2 -->
             <div class="card">
-                <div class="card-header">
-                    <i class="fas fa-car"></i> Automatic Vehicle Recognition System
-                </div>
+                <div class="card-header">Automatic Vehicle Recognition System</div>
                 <div class="card-body">
-                    <p>A Flask-based system integrating OpenCV for real-time vehicle plate detection and recognition.</p>
-                    <a href="https://github.com/NyashaEysenck/Automatic-Vehicle-Recognition"  class="btn-primary">View Project</a>
-                </div>
-            </div>
-            <!-- Project 3 -->
-            <div class="card">
-                <div class="card-header">
-                    <i class="fas fa-stream"></i> Machine Learning Capstone
-                </div>
-                <div class="card-body">
-                    <p>A complete Streamlit app developed as part of the IBM Machine Learning Capstone, featuring model training and evaluation.</p>
-                    <a href="https://github.com/NyashaEysenck/Machine-Learning-Capstone"  class="btn-primary">View Project</a>
-                </div>
-            </div>
-            <!-- Project 4 -->
-            <div class="card">
-                <div class="card-header">
-                    <i class="fas fa-brain"></i> AI Capstone Project with Deep Learning
-                </div>
-                <div class="card-body">
-                    <p>An AI Capstone Project that involved using pretraining on ResNet and VGG models to achieve high classification accuracy.</p>
-                    <a href="https://github.com/NyashaEysenck/AI-Capstone-Project-with-Deep-Learning"  class="btn-primary">View Project</a>
-                </div>
-            </div>
-            <!-- Project 5 -->
-            <div class="card">
-                <div class="card-header">
-                    <i class="fas fa-globe"></i> Applied Data Science Capstone
-                </div>
-                <div class="card-body">
-                    <p>A data science project involving data collection, wrangling, analysis, and visualization using real-world datasets.</p>
-                    <a href="https://github.com/NyashaEysenck/Applied-Data-Science-Capstone" class="btn-primary">View Project</a>
+                    <p>A Flask-based vehicle recognition system using OpenCV for plate detection.</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
- <!-- Technologies & Skills Section -->
-    <section class="section">
-        <h2>Technologies & Skills</h2>
-        
-        <!-- Programming Languages -->
-        <div class="skills-category">
-            <h3>Programming Languages</h3>
-            <div class="skill-container">
-                <div class="skill-name">Python <i class="fab fa-python"></i></div>
-                <div class="progress-bar">
-                    <div class="progress" style="--progress-width: 90%;"></div>
-                </div>
-            </div>
-            <div class="skill-container">
-                <div class="skill-name">JavaScript <i class="fab fa-js-square"></i></div>
-                <div class="progress-bar">
-                    <div class="progress" style="--progress-width: 80%;"></div>
-                </div>
-            </div>
-            <div class="skill-container">
-                <div class="skill-name">C++ <i class="fab fa-cuttlefish"></i></div>
-                <div class="progress-bar">
-                    <div class="progress" style="--progress-width: 75%;"></div>
-                </div>
-            </div>
-            <div class="skill-container">
-                <div class="skill-name">SQL <i class="fas fa-database"></i></div>
-                <div class="progress-bar">
-                    <div class="progress" style="--progress-width: 70%;"></div>
-                </div>
-            </div>
-        </div>
 
-        <!-- Frameworks -->
-        <div class="skills-category">
-            <h3>Frameworks</h3>
-            <div class="skill-container">
-                <div class="skill-name">Django <i class="fab fa-python"></i></div>
-                <div class="progress-bar">
-                    <div class="progress" style="--progress-width: 85%;"></div>
-                </div>
-            </div>
-            <div class="skill-container">
-                <div class="skill-name">Flask <i class="fab fa-python"></i></div>
-                <div class="progress-bar">
-                    <div class="progress" style="--progress-width: 80%;"></div>
-                </div>
-            </div>
+<!-- Skills Section -->
+<section id="skills" class="section">
+    <div class="container">
+        <h2>Skills</h2>
+        <div>
+            <h3>Software Engineering</h3>
+            <ul>
+                <li>Python, C++, JavaScript</li>
+                <li>Flask, Django, React</li>
+                <li>SQL, MongoDB</li>
+            </ul>
         </div>
+        <div>
+            <h3>Data Science</h3>
+            <ul>
+                <li>Pandas, NumPy</li>
+                <li>Scikit-learn</li>
+                <li>Data Wrangling and Visualization</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Machine Learning</h3>
+            <ul>
+                <li>TensorFlow, Keras</li>
+                <li>YOLO, ResNet, VGG</li>
+                <li>Model Training and Optimization</li>
+            </ul>
+        </div>
+    </div>
+</section>
 
-        <!-- Libraries -->
-        <div class="skills-category">
-            <h3>Libraries</h3>
-            <div class="skill-container">
-                <div class="skill-name">OpenCV <i class="fas fa-camera-retro"></i></div>
-                <div class="progress-bar">
-                    <div class="progress" style="--progress-width: 70%;"></div>
-                </div>
-            </div>
-            <div class="skill-container">
-                <div class="skill-name">EasyOCR <i class="fas fa-text-width"></i></div>
-                <div class="progress-bar">
-                    <div class="progress" style="--progress-width: 65%;"></div>
-                </div>
-            </div>
-            <div class="skill-container">
-                <div class="skill-name">TensorFlow <i class="fas fa-brain"></i></div>
-                <div class="progress-bar">
-                    <div class="progress" style="--progress-width: 75%;"></div>
-                </div>
-            </div>
-            <div class="skill-container">
-                <div class="skill-name">Scikit-learn <i class="fas fa-chart-line"></i></div>
-                <div class="progress-bar">
-                    <div class="progress" style="--progress-width: 80%;"></div>
-                </div>
-            </div>
-            <div class="skill-container">
-                <div class="skill-name">Pandas <i class="fas fa-table"></i></div>
-                <div class="progress-bar">
-                    <div class="progress" style="--progress-width: 85%;"></div>
-                </div>
-            </div>
-            <div class="skill-container">
-                <div class="skill-name">Numpy <i class="fas fa-cogs"></i></div>
-                <div class="progress-bar">
-                    <div class="progress" style="--progress-width: 90%;"></div>
-                </div>
-            </div>
-        </div>
+<!-- Contact Section -->
+<section id="contact" class="section">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+    </div>
+</section>
 
-        <!-- Tools -->
-        <div class="skills-category">
-            <h3>Tools</h3>
-            <div class="skill-container">
-                <div class="skill-name">Git <i class="fab fa-git"></i></div>
-                <div class="progress-bar">
-                    <div class="progress" style="--progress-width: 80%;"></div>
-                </div>
-            </div>
-            <div class="skill-container">
-                <div class="skill-name">Docker <i class="fab fa-docker"></i></div>
-                <div class="progress-bar">
-                    <div class="progress" style="--progress-width: 70%;"></div>
-                </div>
-            </div>
-            <div class="skill-container">
-                <div class="skill-name">Jupyter Notebook <i class="fas fa-file-code"></i></div>
-                <div class="progress-bar">
-                    <div class="progress" style="--progress-width: 85%;"></div>
-                </div>
-            </div>
-            <div class="skill-container">
-                <div class="skill-name">MySQL <i class="fas fa-database"></i></div>
-                <div class="progress-bar">
-                    <div class="progress" style="--progress-width: 75%;"></div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Other Skills -->
-        <div class="skills-category">
-            <h3>Other Skills</h3>
-            <div class="skill-container">
-                <div class="skill-name">Data Science <i class="fas fa-chart-bar"></i></div>
-                <div class="progress-bar">
-                    <div class="progress" style="--progress-width: 80%;"></div>
-                </div>
-            </div>
-            <div class="skill-container">
-                <div class="skill-name">Machine Learning <i class="fas fa-brain"></i></div>
-                <div class="progress-bar">
-                    <div class="progress" style="--progress-width: 85%;"></div>
-                </div>
-            </div>
-            <div class="skill-container">
-                <div class="skill-name">Deep Learning <i class="fas fa-network-wired"></i></div>
-                <div class="progress-bar">
-                    <div class="progress" style="--progress-width: 75%;"></div>
-                </div>
-            </div>
-            <div class="skill-container">
-                <div class="skill-name">Computer Vision <i class="fas fa-eye"></i></div>
-                <div class="progress-bar">
-                    <div class="progress" style="--progress-width: 70%;"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Spoken Languages Section -->
-    <section class="section">
-        <h2>Spoken Languages</h2>
-        <div class="skills">
-            
-            <!-- Language 1 -->
-            <div class="language-container">
-                <div class="language-name">English <i class="fas fa-globe"></i></div>
-                <div class="progress-bar">
-                    <div class="progress" style="--progress-width: 100%;"></div>
-                </div>
-            </div>
-             <!-- Language 3 -->
-            <div class="language-container">
-                <div class="language-name">Shona <i class="fas fa-globe"></i></div>
-                <div class="progress-bar">
-                    <div class="progress" style="--progress-width: 100%;"></div>
-                </div>
-            </div>
-            <!-- Language 2 -->
-            <div class="language-container">
-                <div class="language-name">Portuguese <i class="fas fa-globe"></i></div>
-                <div class="progress-bar">
-                    <div class="progress" style="--progress-width: 50%;"></div>
-                </div>
-            </div>
-           
-        </div>
-    </section>
-
-    <footer>
-        <p>Connect with me:</p>
-        <div class="contact-icons">
-            <a href="https://www.linkedin.com/in/nyasha-gandah-8997b8311/"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/NyashaEysenck"><i class="fab fa-github"></i></a>
-        </div>
-    </footer>
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
+</footer>
 
 </body>
 </html>
